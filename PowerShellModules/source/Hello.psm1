@@ -1,5 +1,8 @@
-function Hello {
-   Write-Host "Hello!";
+function Hello(
+   $message = "Hello")
+   {
+   Write-Host $message;
+   return $message;
 }
 
 

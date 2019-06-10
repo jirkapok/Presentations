@@ -40,7 +40,19 @@ Test-ModuleManifest Hello.psd1
 
 ### Write tests
 
-* TODO
+```powershell
+Import-Module pester
+Get-Command -Module pester
+# Create script with tests creates two ps1 files
+New-Fixture
+# Invoke the tests from command line
+Invoke-Pester
+# Play with the asserts and before and after each
+# Check the code coverage
+Invoke-Pester -CodeCoverage *.*
+# Generates NUnitXml file
+Invoke-Pester -OutputFile testoutput.xml -Show Summary,Failed
+```
 
 ### Automate using Psake
 
