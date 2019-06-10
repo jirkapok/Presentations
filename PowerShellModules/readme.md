@@ -56,7 +56,14 @@ Invoke-Pester -OutputFile testoutput.xml -Show Summary,Failed
 
 ### Automate using Psake
 
-* TODO
+```powershell
+# make the psake available
+Import-Module psake
+# Execute the default script file with "default" task
+Invoke-Psake
+# Run customized build
+Invoke-psake -buildFile .\psakefile.ps1 -task FailBuild
+```
 
 
 ## Resources
