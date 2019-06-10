@@ -22,7 +22,7 @@ $env:PSModulePath
 # List commands published by the module
 Get-Command -Module posh-git
 # Import the module from file
-Import-Module .\Hello.psm1
+Import-Module .\Hello\Hello.psm1
 ```
 
 ### Create custom module
@@ -33,9 +33,9 @@ Import-Module .\Hello.psm1
 # observe its commands
 New-Module -Name Hello -ScriptBlock {function Hello {"Hello!"}} | Import-module
 # Create new manifest file and edit its content mainly: RootModule, FileList, FunctionsToExport
-New-ModuleManifest Hello.psd1
+New-ModuleManifest .\Hello\Hello.psd1
 # Edit the file and test the module definition
-Test-ModuleManifest Hello.psd1
+Test-ModuleManifest .\Hello\Hello.psd1
 ```
 
 ### Write tests
@@ -65,6 +65,17 @@ Invoke-Psake
 Invoke-psake -buildFile .\psakefile.ps1 -task FailBuild
 ```
 
+### Host your Modules
+
+```powershell
+# Register new repository
+New-Item C:\PsRepository -ItemType Directory -Force
+Register-PSRepository -Name "Custom" -SourceLocation C:\PsRepository -PublishLocation C:\PsRepository -InstallationPolicy Trusted
+# Publish the module module needs to be placed inside directory with the same name as the module script
+Publish-Module -Path .\Hello -Repository "Custom"
+# observe the repository directory content
+# Use all other commands to find, list, install or import your module
+```
 
 ## Resources
 

@@ -1,5 +1,5 @@
 ﻿$here = Split-Path -Parent $MyInvocation.MyCommand.Path
-$sut = ".\Hello.psm1"
+$sut = ".\Hello\Hello.psm1"
 Import-Module "$here\$sut"
 
 Describe "Hello module" {
