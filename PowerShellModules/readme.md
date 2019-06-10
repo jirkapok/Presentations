@@ -2,7 +2,54 @@
 
 Source code and materials for powershell modules development and testing in powershell.
 
-## Tools used
+* Use Run/Debug buttons in VS code to run tests
+* Use Terminal in VS code to run Powershell commands
+
+## Tasks
+
+### Working with modules
+
+```powershell
+# List packages source, which contains PsGalery online repository
+Get-PackageSource | ft -AutoSize
+# Find example package
+Find-Module posh-git
+# Import Git commands support to powershell
+Install-Module posh-git
+Import-Module posh-git
+# List paths where powershell searches for modules - observe the directory structure
+$env:PSModulePath
+# List commands published by the module
+Get-Command -Module posh-git
+# Import the module from file
+Import-Module .\Hello.psm1
+```
+
+### Create custom module
+
+```powershell
+# Create dynamic in memory module and import it
+# To override the already loaded module, restart powershell
+# observe its commands
+New-Module -Name Hello -ScriptBlock {function Hello {"Hello!"}} | Import-module
+# Create new manifest file and edit its content mainly: RootModule, FileList, FunctionsToExport
+New-ModuleManifest Hello.psd1
+# Edit the file and test the module definition
+Test-ModuleManifest Hello.psd1
+```
+
+### Write tests
+
+* TODO
+
+### Automate using Psake
+
+* TODO
+
+
+## Resources
+
+### Tools used
 
 * Powershell 5.1+
 * [Visual Studio Code](https://code.visualstudio.com/)
@@ -10,7 +57,7 @@ Source code and materials for powershell modules development and testing in powe
 * [Pester](https://github.com/pester/Pester)
 * [Psake](https://github.com/psake/psake)
 
-## Links
+### Links
 
 * https://docs.microsoft.com/en-us/powershell/developer/module/how-to-write-a-powershell-script-module
 * https://www.pluralsight.com/courses/psmodules
