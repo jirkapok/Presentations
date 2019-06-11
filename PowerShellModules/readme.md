@@ -1,13 +1,14 @@
 # PowerShell modules and testing
 
-Source code and materials for powershell modules development and testing in powershell.
+Source code and materials for powershell modules development and testing in powershell. Goal of this workshop is to get introduction how to write reusable powershell scripts,
+tests and share the code with your team in software development build automation. But the same concepts can be used also by administrators. There are no files with tasks solution, because we are only exploring the module features.
 
 * Use Run/Debug buttons in VS code to run tests
 * Use Terminal in VS code to run Powershell commands
 
 ## Tasks
 
-### Working with modules
+### Explore modules
 
 ```powershell
 # List packages source, which contains PsGalery online repository
@@ -65,7 +66,7 @@ Invoke-Psake
 Invoke-psake -buildFile .\psakefile.ps1 -task FailBuild
 ```
 
-### Host your Modules
+### Share your Modules
 
 ```powershell
 # Register new repository
