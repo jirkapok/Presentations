@@ -34,4 +34,5 @@ Notes:
 
 ### 3. Replace the Console user interface by another one
 
-1. Extract the console interaction to separate methods
+1. Extract the console interaction to separate methods (extract method refactoring)
+2. Extract the UI methods to separate class (exctract class refactoring)
