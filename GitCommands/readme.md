@@ -14,7 +14,7 @@ Follow the commands in [Tasks document](./tasks.md).
     * 3 - source revision and target revision side by side with final result or base revision below in third window
     * 4 - source, target, base revisions and result windows
 
-|                     | Last release | Paths | Navigate to conflict | Git build-in | Syntax highlighting |
+| Merge tool          | Last release | Paths | Navigate to conflict | Git build-in | Syntax highlighting |
 | -----------------   | ------------ | ----- | -------------------- | ------------ | ------------------- |
 | TortoiseGitMerge    | 2018/2       | 3     | Y                    |              |                     |
 | p4merge             | 2018/2       | 4     | Y                    | Y            |                     |

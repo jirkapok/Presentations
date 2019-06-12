@@ -6,6 +6,7 @@ All examples contain their own directory, readme, original state and solutions.
 ## Content
 
 * [Powershell modules and testing](./PowerShellModules/readme.md)
+* [Git commands](./GitCommands/readme.md)
 
 ## [Contribution](./CONTRIBUTING.md)
 
