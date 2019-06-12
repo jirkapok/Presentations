@@ -6,5 +6,10 @@
         {
             return first + second;
         }
+
+        internal static int Sub(int first, int second)
+        {
+            return first - second;
+        }
     }
 }

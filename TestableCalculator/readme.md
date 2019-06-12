@@ -30,6 +30,7 @@ Notes:
 3. Refactor the Calculate method to simplify the code
 4. Moved Calculate method to new CalculatorService class using extract class refactoring
 5. Added new failing test for new substract operation
+6. Implemented Sub command
 
 ### 3. Replace the user interface by another one
 

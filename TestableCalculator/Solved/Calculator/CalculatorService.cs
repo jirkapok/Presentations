@@ -10,6 +10,8 @@ namespace Calculator
             {
                 case Commands.add:
                     return Mathematics.Add(first, second);
+                case Commands.sub:
+                    return Mathematics.Sub(first, second);
                 default:
                     throw new InvalidOperationException("Unknown command in calculator");
             }
