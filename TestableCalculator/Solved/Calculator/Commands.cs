@@ -2,6 +2,7 @@
 {
     public enum Commands
     {
-        add
+        add,
+        sub
     }
 }

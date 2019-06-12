@@ -14,6 +14,13 @@ namespace Tests
             Assert.AreEqual(7, result);
         }
         
+        [TestMethod]
+        public void FiveTwo_Sub_Returns3()
+        {
+            var result = CalculatorService.Calculate(Commands.sub, 5, 2);
+            Assert.AreEqual(3, result);
+        }
+        
         [ExpectedException(typeof(InvalidOperationException))]
         [TestMethod]
         public void UnknownCommand_ThrowsException()
