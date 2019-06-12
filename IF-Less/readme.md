@@ -1,0 +1,3 @@
+# IF-less programming in C#
+
+Goal of these examples is to show, how you can transform some of typical IF-ELSE statements to Object oriented structures. And no circumstances these examples don't represent complete list of solutions. Also it doesn't mean they are always better, than the previous implementation. It shows another way of thinking about programming constructs. The project contains source directory with initial state and solved directory with resolved code. Each directory represents one example. There is always the same `TODO` task to reduce number of IF statements to only one or no one.
