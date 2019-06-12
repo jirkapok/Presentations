@@ -17,7 +17,7 @@ Notes:
 
 ### 1. Fix a bug
 
-1. TODO
+1. Add Tests project
 
 ### 2. Add new feature to support "substract" operation
 
