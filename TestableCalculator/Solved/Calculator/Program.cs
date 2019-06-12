@@ -12,19 +12,27 @@ namespace Calculator
 
             int result;
             
-            switch (command)
-			{
-				case Commands.add:
-                    result = Mathematics.Add(first, second);
-					break;
-				default:
-					throw new InvalidOperationException("Unknown command in calculator");
-			}
+            result = Calculate(command, first, second);
 
             Console.WriteLine(result);
 
 
             Console.ReadKey();
+        }
+
+        internal static int Calculate(Commands command, int first, int second)
+        {
+            int result;
+            switch (command)
+            {
+                case Commands.add:
+                    result = Mathematics.Add(first, second);
+                    break;
+                default:
+                    throw new InvalidOperationException("Unknown command in calculator");
+            }
+
+            return result;
         }
     }
 }
