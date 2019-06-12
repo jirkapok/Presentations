@@ -32,6 +32,6 @@ Notes:
 5. Added new failing test for new substract operation
 6. Implemented Sub command
 
-### 3. Replace the user interface by another one
+### 3. Replace the Console user interface by another one
 
-1. TODO
+1. Extract the console interaction to separate methods
