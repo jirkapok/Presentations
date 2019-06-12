@@ -5,12 +5,12 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Tests
 {
     [TestClass]
-    public class ProgramTests
+    public class CalculatorServiceTests
     {
         [TestMethod]
         public void FiveTwo_Add_Returns7()
         {
-            var result = Program.Calculate(Commands.add, 5, 2);
+            var result = CalculatorService.Calculate(Commands.add, 5, 2);
             Assert.AreEqual(7, result);
         }
         
@@ -18,7 +18,7 @@ namespace Tests
         [TestMethod]
         public void UnknownCommand_ThrowsException()
         {
-            Program.Calculate((Commands)int.MaxValue, 5, 2);
+            CalculatorService.Calculate((Commands)int.MaxValue, 5, 2);
         }
     }
 }
