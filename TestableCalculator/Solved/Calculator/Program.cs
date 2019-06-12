@@ -13,18 +13,13 @@ namespace Calculator
 			switch (command)
 			{
 				case Commands.add:
-					Console.WriteLine(Add(first, second));
+					Console.WriteLine(Mathematics.Add(first, second));
 					break;
 				default:
 					throw new InvalidOperationException("Unknown command in calculator");
 			}
 
             Console.ReadKey();
-        }
-
-        internal static int Add(int first, int second)
-        {
-            return first + second;
         }
     }
 }
