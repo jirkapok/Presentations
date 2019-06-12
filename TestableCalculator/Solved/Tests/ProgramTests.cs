@@ -1,3 +1,4 @@
+using Calculator;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Tests
@@ -8,7 +9,8 @@ namespace Tests
         [TestMethod]
         public void FiveTwo_Add_Returns7()
         {
-            Assert.Fail();
+            var result = Program.Add(5, 2);
+            Assert.AreEqual(7, result);
         }
     }
 }

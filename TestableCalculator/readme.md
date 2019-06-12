@@ -19,6 +19,7 @@ Notes:
 
 1. Add Tests project
 2. Add InternalsVisible to the Calculator project and add reference to the Tests project
+3. Added test to fix the add method and fix the method
 
 ### 2. Add new feature to support "substract" operation
 
