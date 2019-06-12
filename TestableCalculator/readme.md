@@ -25,7 +25,8 @@ Notes:
 
 ### 2. Add new feature to support "substract" operation
 
-1. TODO
+1. Move the Console.WriteLine out of the switch statement (to local variable, split declaration and assingment and move variable to outer scope refactorings)
+2. Use extact method to isolate the switch statement
 
 ### 3. Replace the user interface by another one
 

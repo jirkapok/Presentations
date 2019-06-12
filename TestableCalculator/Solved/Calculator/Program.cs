@@ -10,14 +10,19 @@ namespace Calculator
 			int second = Convert.ToInt32(Console.ReadLine());
 			var command = (Commands)Enum.Parse(typeof(Commands), Console.ReadLine());
 
-			switch (command)
+            int result;
+            
+            switch (command)
 			{
 				case Commands.add:
-					Console.WriteLine(Mathematics.Add(first, second));
+                    result = Mathematics.Add(first, second);
 					break;
 				default:
 					throw new InvalidOperationException("Unknown command in calculator");
 			}
+
+            Console.WriteLine(result);
+
 
             Console.ReadKey();
         }
