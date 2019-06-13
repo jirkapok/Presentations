@@ -51,11 +51,11 @@ Show directory structure and present hosting possibilities custom server
 .\nuget.exe restore packages.config # doesn't have project/solution file
 ```
 
- * What happens, when we from Visual Studio do package update? Nainstals latest version and overwrites project files. It is recommended to disable version in package directory name using nuget.config.
+ * What happens, when we from Visual Studio do package update? Installs latest version and overwrites project files. It is recommended to disable version in package directory name using nuget.config.
  * Version command vs. range in nuspec? Empty version is dangerous, i never know what happens.
- * What happens, if binary file is in je v content directory? Visual studio adds binary files to solution files.
+ * What happens, if binary file is in content directory? Visual studio adds binary files to solution files.
  * What happens, if versions are on forth position? see last example.
- * Why nuget doesn't uninstall? Because developers don't need to remove.
+ * Why nuget doesn't contain uninstall command? Because developers don't need to remove.
  * Why each install consumes disk space? Nuget has cache which caches all versions of all packages.
 
 ## PAKET
@@ -83,11 +83,11 @@ Why do you need nuget? To be able download paket.
 * Mention, that chocolatey installs it self using powershell script or nuget download.
 
 ```powershell
-iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex; # actual instalace
+iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex; # actual installation
 choco; # get choco version
 choco sources disable -n=Chocolatey; # disable default source
 choco source add -s .\ChocoSource\ -n=MyPackages; # add custom local source
-choco search terminals -v # search for an package in remote repo and show details
+choco search terminals -v # search for a package in remote repo and show details
 ```
 
 * Introduce installer vs. portable a autouninstaller
@@ -118,7 +118,7 @@ Get-PackageSource; # no one is trustful
 Register-PackageSource -Name chocolatey -Location http://chocolatey.org/api/v2 -Provider chocolateyget -Trusted # add chocolatey
 Set-PackageSource chocolateyget -trusted; # setup packagesource ass trustful
 Register-PackageSource -Name MyPackages -Location .\LocalPackages\ -trusted -ProviderName nuget # doesnt work with chocolatey
-find-package -Source MyPackages -AllVersions # Trick: add local chocolatey source as nugetprovider
+find-package -Source MyPackages -AllVersions # Trick: add local chocolatey source as nuget provider
 ```
 
 * Introduce difference between direct call to choco and call choco using OneGet
