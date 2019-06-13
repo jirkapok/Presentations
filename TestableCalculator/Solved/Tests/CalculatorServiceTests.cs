@@ -6,7 +6,7 @@ using Moq;
 namespace Tests
 {
     [TestClass]
-    public class ProgramTests
+    public class CalculatorServiceTests
     {
         [TestMethod]
         public void FiveTwo_Add_Returns7()
@@ -18,7 +18,7 @@ namespace Tests
             mockUi.Setup(ui => ui.ReadCommand())
                 .Returns(Commands.add);
 
-            Program.Calculate(mockUi.Object);
+            new CalculatorService(mockUi.Object).Calculate();
             mockUi.Verify(ui => ui.WriteResult(7));
         }
 
@@ -32,7 +32,7 @@ namespace Tests
             mockUi.Setup(ui => ui.ReadCommand())
                 .Returns(Commands.sub);
 
-            Program.Calculate(mockUi.Object);
+            new CalculatorService(mockUi.Object).Calculate();
             mockUi.Verify(ui => ui.WriteResult(3));
         }
 
@@ -48,7 +48,7 @@ namespace Tests
             mockUi.Setup(ui => ui.ReadCommand())
                 .Returns((Commands)int.MaxValue);
 
-            Program.Calculate(mockUi.Object);
+            new CalculatorService(mockUi.Object).Calculate();
         }
     }
 }

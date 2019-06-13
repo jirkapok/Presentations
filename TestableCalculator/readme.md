@@ -40,3 +40,4 @@ Notes:
 4. Extract Calculate method from Main by consuming Console UI
 5. Extract IUserInterface from ConsoleUserInterface class
 6. test the Calculate method in program class
+7. Move the calculate method from Program class to calculator service (now you are able to use any other Phone, desktop or web UI to use the same CalculatorService engine)
