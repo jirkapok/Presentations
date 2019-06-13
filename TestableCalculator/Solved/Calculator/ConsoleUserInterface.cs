@@ -2,20 +2,20 @@
 
 namespace Calculator
 {
-    internal class ConsoleUserInterface
+    internal class ConsoleUserInterface : IUserInterface
     {
-        internal void WriteResult(int result)
+        public void WriteResult(int result)
         {
             Console.WriteLine(result);
             Console.ReadKey();
         }
 
-        internal Commands ReadCommand()
+        public Commands ReadCommand()
         {
             return (Commands)Enum.Parse(typeof(Commands), Console.ReadLine());
         }
 
-        internal int ReadNumber()
+        public int ReadNumber()
         {
             return Convert.ToInt32(Console.ReadLine());
         }

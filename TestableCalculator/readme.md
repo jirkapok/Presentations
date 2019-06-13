@@ -38,3 +38,5 @@ Notes:
 2. Extract the UI methods to separate class (exctract class refactoring)
 3. Change the Console UI methods from static to instance methods
 4. Extract Calculate method from Main by consuming Console UI
+5. Extract IUserInterface from ConsoleUserInterface class
+
