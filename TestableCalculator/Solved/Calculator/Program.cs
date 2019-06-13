@@ -6,11 +6,12 @@ namespace Calculator
     {
         private static void Main()
         {
-			int first = ConsoleUserInterface.ReadNumber();
-			int second = ConsoleUserInterface.ReadNumber();
-			var command = ConsoleUserInterface.ReadCommand();
+            var ui = new ConsoleUserInterface();
+            int first = ui.ReadNumber();
+			int second = ui.ReadNumber();
+			var command = ui.ReadCommand();
             var result = CalculatorService.Calculate(command, first, second);
-            ConsoleUserInterface.WriteResult(result);
+            ui.WriteResult(result);
         }
     }
 }
