@@ -1,6 +1,6 @@
 ﻿namespace Calculator
 {
-    internal interface IUserInterface
+    public interface IUserInterface
     {
         void WriteResult(int result);
         Commands ReadCommand();

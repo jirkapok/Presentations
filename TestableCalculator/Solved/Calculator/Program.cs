@@ -10,7 +10,7 @@ namespace Calculator
             Calculate(ui);
         }
 
-        private static void Calculate(ConsoleUserInterface ui)
+        internal static void Calculate(IUserInterface ui)
         {
             int first = ui.ReadNumber();
             int second = ui.ReadNumber();

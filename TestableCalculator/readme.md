@@ -39,4 +39,4 @@ Notes:
 3. Change the Console UI methods from static to instance methods
 4. Extract Calculate method from Main by consuming Console UI
 5. Extract IUserInterface from ConsoleUserInterface class
-
+6. test the Calculate method in program class
