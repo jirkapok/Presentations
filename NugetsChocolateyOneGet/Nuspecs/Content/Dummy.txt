@@ -1,0 +1,1 @@
+Dummy content, because nuget package cant be empty.

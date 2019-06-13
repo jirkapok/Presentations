@@ -9,6 +9,7 @@ All examples contain their own directory, readme, original state and solutions.
 * [Git commands](./GitCommands/readme.md)
 * [IF-Less programming in C#](./IF-Less/readme.md)
 * [Test-able code](./TestableCalculator/readme.md)
+* [Nugets Chocolatey and other confectionery](./NugetsChocolateyOneGet/readme.md)
 
 ## [Contribution](./CONTRIBUTING.md)
 

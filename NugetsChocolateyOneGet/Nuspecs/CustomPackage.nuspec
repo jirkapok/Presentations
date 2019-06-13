@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>CustomPackage</id>
+        <version>1.0.0</version>
+        <title>Custom Package</title>
+        <authors>jiri.pokorny</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>My package description.</description>
+
+	    <dependencies>
+            <dependency id="CustomDependency" version="1.0" />
+	     </dependencies>
+	</metadata>
+    <files>
+        <file src="Content\Dummy.txt" target="content\Dummy.txt" />
+    </files>
+
+</package>
