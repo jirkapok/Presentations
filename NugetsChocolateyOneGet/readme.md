@@ -1,4 +1,4 @@
-# Nuget, CHocolatey and other confectionery
+# Nuget, Chocolatey and other confectionery
 
 Goal of this workshop is to present the most popular packaging systems on Windows and their general usage.
 
