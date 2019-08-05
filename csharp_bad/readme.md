@@ -21,3 +21,4 @@ Purpose of this presentation is to balance positive opinions around new things i
 * https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-6
 * https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-7
 * https://github.com/dotnet/csharplang
+* https://www.tiobe.com/tiobe-index/

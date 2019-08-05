@@ -7,7 +7,7 @@ namespace tests
     public class SyntacticSugarTests
     {
         [Test]
-        public void GetBackingField()
+        public void Multiple_Ways_For_Property_Large_Learning_Curve()
         {
             var properties = new SyntacticSugar()
             {
