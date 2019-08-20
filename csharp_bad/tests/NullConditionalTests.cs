@@ -17,6 +17,7 @@ namespace tests
             Assert.AreNotEqual(0, charCount);
         }
 
+        // False positive test
         [Test]
         public void NullProperty_StopsExecution()
         {
