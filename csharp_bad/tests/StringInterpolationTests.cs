@@ -12,7 +12,7 @@ namespace tests
         {
             var money = 2600;
             var result = StringInterpolation.Format(money); // $"{money:N}";
-            var expected = string.Format(CultureInfo.CurrentUICulture, "{0:N}", money);
+            var expected = string.Format(CultureInfo.CurrentCulture, "{0:N}", money);
             Assert.AreNotEqual(expected, result);
         }
     }
