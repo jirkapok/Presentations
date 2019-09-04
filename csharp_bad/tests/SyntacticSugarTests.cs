@@ -13,7 +13,19 @@ namespace tests
             {
                 PropA =  "Expected"
             };
+
             Assert.AreEqual(properties.PropA, properties.PropB);
+        }
+
+        [Test]
+        public void Type_Contains_Hidden_Methods()
+        {
+            var properties = new SyntacticSugar();
+
+            var type = properties.GetType();
+            var methods = type.GetMethods();
+            var getter_method = type.GetMethod("get_PropA");
+            Assert.IsNotNull(getter_method);
         }
     }
 }
