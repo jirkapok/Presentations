@@ -4,6 +4,8 @@ Purpose of this presentation is to balance positive opinions around new things i
 
 > `NOTE`: Read this presentation as alternative opinions only.
 
+> `MOTO` :  **Improve productivity when writing C#. Write more concise code that is also more readable.**
+
 ## Discused topics:
 
 * Syntactic sugar

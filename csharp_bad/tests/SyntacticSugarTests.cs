@@ -9,6 +9,7 @@ namespace tests
         [Test]
         public void Multiple_Ways_For_Property_Large_Learning_Curve()
         {
+            // See multiple ways how to define property which makes the beginner hard to read
             var properties = new SyntacticSugar()
             {
                 PropA =  "Expected"
@@ -20,6 +21,7 @@ namespace tests
         [Test]
         public void Type_Contains_Hidden_Methods()
         {
+            // all cenvert to get/set accessors anyway
             var properties = new SyntacticSugar();
 
             var type = properties.GetType();
