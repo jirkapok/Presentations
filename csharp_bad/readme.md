@@ -9,8 +9,7 @@ Purpose of this presentation is to balance positive opinions around new things i
 * Syntactic sugar
 * String interpolations
 * Null-conditional operators
-* Local functions https://asizikov.github.io/2016/04/15/thoughts-on-local-functions/ in local functions, parameters are called by reference
-https://devblogs.microsoft.com/premier-developer/dissecting-the-local-functions-in-c-7/
+* Local functions
 * Exception filters
 * Tuples https://www.davidhayden.me/blog/tuples-csharp-7-visual-studio-2017
 * Out variables
@@ -24,3 +23,5 @@ https://devblogs.microsoft.com/premier-developer/dissecting-the-local-functions-
 * https://github.com/dotnet/csharplang
 * https://www.tiobe.com/tiobe-index/
 * https://asizikov.github.io/2016/04/15/thoughts-on-local-functions/
+* https://devblogs.microsoft.com/premier-developer/dissecting-the-local-functions-in-c-7/
+* https://docs.microsoft.com/en-us/dotnet/csharp/local-functions-vs-lambdas
