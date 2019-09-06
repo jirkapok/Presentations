@@ -1,6 +1,6 @@
 ﻿namespace csharp_bad.Exceptions
 {
-    enum ErrorCodes
+    public enum ErrorCodes
     {
         Unknown = 0,
         NotEnoughSpace = 1,

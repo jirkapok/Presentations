@@ -2,7 +2,7 @@
 
 namespace csharp_bad.Exceptions
 {
-    internal class FileProcessingException : Exception
+    public class FileProcessingException : Exception
     {
         public ErrorCodes ErrorCode { get; }
 
