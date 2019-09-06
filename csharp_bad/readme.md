@@ -24,6 +24,8 @@ Purpose of this presentation is to balance positive opinions around new things i
 * https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-7
 * https://github.com/dotnet/csharplang
 * https://www.tiobe.com/tiobe-index/
+* https://insights.stackoverflow.com/trends
+* [Clean cod book at Amazon](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
 * https://asizikov.github.io/2016/04/15/thoughts-on-local-functions/
 * https://devblogs.microsoft.com/premier-developer/dissecting-the-local-functions-in-c-7/
 * https://docs.microsoft.com/en-us/dotnet/csharp/local-functions-vs-lambdas
