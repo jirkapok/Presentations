@@ -29,5 +29,12 @@ namespace tests
             var getter_method = type.GetMethod("get_PropA");
             Assert.IsNotNull(getter_method);
         }
+
+        [Test]
+        public void Shorten_Code_Doestn_Mean_More_Readeable()
+        {
+            var result = SyntacticSugar.Move("a1h2o3j");
+            Assert.AreEqual("a2h3o4j", result);
+        }
     }
 }
