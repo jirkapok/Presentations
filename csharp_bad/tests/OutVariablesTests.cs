@@ -4,11 +4,12 @@ using NUnit.Framework;
 namespace tests
 {
     [TestFixture]
-    public class OutValuesTests
+    public class OutVariablesTests
     {
         [Test]
         public void Out_Variables_show_new_types()
         {
+            // out should be avoided
             var passed = Storage.Store(5, out string error);
             Assert.IsTrue(passed);
             Assert.IsTrue(string.IsNullOrEmpty(error));

@@ -1,4 +1,5 @@
-﻿using csharp_bad;
+﻿using System;
+using csharp_bad;
 using NUnit.Framework;
 
 namespace tests
@@ -10,8 +11,8 @@ namespace tests
         public void Tuples_Shouldnt_be_objects_replacement()
         {
             var radius = 5;
-            var tuple = Circle.CircleAreaByTuple(radius);
-            var custom = Circle.CircleAreaNew(radius);
+            Tuple<int, double> tuple = Circle.CircleAreaByTuple(radius);
+            (int radius, double area) custom = Circle.CircleAreaNew(radius);
             var circle = new Circle(radius);
             Assert.AreEqual(custom.area, circle.Area);
         }
