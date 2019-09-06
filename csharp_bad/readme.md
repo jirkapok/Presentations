@@ -15,11 +15,10 @@ Purpose of this presentation is to balance positive opinions around new things i
 * Exception filters
 * Tuples
 * Out variables
-* Default interface members
 
 ## Results
 
-* They aren't bad, but may reslt in code harder to read and dangerous.
+* They aren't bad, but may reslt in code harder to read for beginners and dangerous without deep understanding.
 * They have concreate usage and should be used carefully to prevent misuse.
 * Usually they show wrong OOP design.
 
