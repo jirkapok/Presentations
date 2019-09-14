@@ -1,12 +1,12 @@
 # Resharper vs. Visual studio
 
-Purpose of these presentation was to have a look and compare plain Visual Studio 2019 Enterprise and Visual Studio 2019 Professional with Resharper to be able distinguish if Resharper still makes sence.
+Purpose of these presentation was to have a look and compare plain Visual Studio 2019 Enterprise and Visual Studio 2019 Professional with Resharper to be able distinguish if Resharper still makes sense.
 
 ## Notes
 
 * Features were explored on example C# code from [Terminals project](https://github.com/Terminals-Origin/Terminals)
 * Not comparing performance, since there is no objective measure.
-* Not comparing feautres, which arent available in both environments.
+* Not comparing features, which aren't available in both environments.
 * Resharper used with Keyboard shortcuts configured with Visual Studio scheme.
 
 ## Features to compare
@@ -24,12 +24,13 @@ Purpose of these presentation was to have a look and compare plain Visual Studio
     * Add using from Nuget package (ConfigurationSettingsTests - add Moq) - both are able to find the package on nuget.org
 * Test Explorer
     * Search class or test by name - both filter
-    * Code coverage - both coverage report with drilldown, colloring, VS no search, but select by test run
+    * Code coverage - both coverage report with drilldown, coloring, VS no search, but select by test run
     * Live testing vs. Resharper continuous testing (FilePersistence.Favorites) - both watching for file changes
 * Code Styling
-    * Find code issues
-    * Batch code cleanup - both
-    * Team Shared settings - both
+    * Find code issues (Resharper Solution wide analysis, Severity in options, VS Analyze > Run code analysis)
+    * Batch code cleanup (Resharper code cleanup, VS Analyze > Run code cleanup) - both
+    * Share issues settings (Resharper manage options, VS Sonar integration) - both
+    * Shared editor settings (Resharper manage options, VS export .editorconfig) - both
 * Price and buy conditions (Yearly billing renewal, i.e. lowest price)
     * [Visual Studio](https://visualstudio.microsoft.com/vs/pricing/)
     * [Resharper](https://www.jetbrains.com/resharper/buy/#commercial?billing=yearly)
@@ -42,6 +43,11 @@ Purpose of these presentation was to have a look and compare plain Visual Studio
 
 
 ## Results
+
+* Visual Studio did large progress during last two years
+* There is overlap in common features
+* There are features, which the other doesn't have
+* It is cheaper to buy Professional with Resharper than VS Enterprise
 
 ## Links
 
