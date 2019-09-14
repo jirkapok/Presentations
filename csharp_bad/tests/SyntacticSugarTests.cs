@@ -7,15 +7,10 @@ namespace tests
     public class SyntacticSugarTests
     {
         [Test]
-        public void Multiple_Ways_For_Property_Large_Learning_Curve()
+        public void Shorten_Code_Doesnt_Mean_More_Readeable()
         {
-            // See multiple ways how to define property which makes the beginner hard to read
-            var properties = new SyntacticSugar()
-            {
-                PropA =  "Expected"
-            };
-
-            Assert.AreEqual(properties.PropA, properties.PropB);
+            var result = SyntacticSugar.Move("a1h2o3j");
+            Assert.AreEqual("a2h3o4j", result);
         }
 
         [Test]
@@ -31,10 +26,15 @@ namespace tests
         }
 
         [Test]
-        public void Shorten_Code_Doestn_Mean_More_Readeable()
+        public void Multiple_Ways_For_Property_Large_Learning_Curve()
         {
-            var result = SyntacticSugar.Move("a1h2o3j");
-            Assert.AreEqual("a2h3o4j", result);
+            // See multiple ways how to define property which makes the beginner hard to read
+            var properties = new SyntacticSugar()
+            {
+                PropA =  "Expected"
+            };
+
+            Assert.AreEqual(properties.PropA, properties.PropB);
         }
     }
 }
