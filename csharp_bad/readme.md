@@ -24,6 +24,7 @@ Purpose of this presentation is to balance positive opinions around new things i
 
 ## Links
 
+* [Stackoverflow survey 2019](https://insights.stackoverflow.com/survey/2019#experience)
 * https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-6
 * https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-7
 * https://github.com/dotnet/csharplang
