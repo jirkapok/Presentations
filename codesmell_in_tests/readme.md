@@ -2,13 +2,13 @@
 
 This presentation was part of the Windows user group days 2020. Purpose of it was to show importance of tests quality and demonstrate how these smells can be improved. As usually each code smell has its own directory with source code. There are two solutions, one with source code smells and one with example solution.
 
-> **NOTE**: The presented solutions don't represent the only solution nor lead to better or shorter code in all case.
+> **NOTE**: The presented solutions don't represent the only solution nor lead to better or shorter code in all cases.
 
 ## How to collect the code smells
 
-* Learn from others mistakes
-* Unable to calculates statistics to find "The most common mistake", there is no such tool, only static code analysis, which needs to be setup for all studied repositories
-* Unable to study all repositories with all the code and merge numbers
+* The idea was to learn from others mistakes
+* We are unable to calculate statistics to find "The most common mistake", there is no such tool, only static code analysis, which needs to be setup for all studied repositories
+* No one is able to study all repositories with all the source code, because number of lines is huge
 * Picked up only what was obvious and already known (from my own experience)
 * => **Ambitions not fulfilled**, only collected examples of code smells visible in source code
 
