@@ -14,19 +14,29 @@ Purpose of this presentation was to show importance of tests quality and demonst
 
 ## Checked repositories
 
- To use trustful code examples i didn't base my presentation on my personal experience only. I searched for examples from real world public repositories.
+ To use trustful code examples i didn't base my presentation on my personal experience only. I searched for examples from real world public repositories and why not to pick up the well known?
 
 * [dotnet runtime](https://github.com/dotnet/runtime) ([list of dotnet repositories](https://github.com/dotnet/core/blob/master/Documentation/core-repos.md))
 * [Mono](https://github.com/mono/mono) - some tests written as applications
-* [aspnet core](https://github.com/dotnet/aspnetcore)
 * [dotnet maui](https://github.com/dotnet/maui)
+* [aspnet core](https://github.com/dotnet/aspnetcore)
+* [Entity framework core](https://github.com/dotnet/efcore)
 * [Chocolatey](https://github.com/chocolatey/choco)
 * [xUnit](https://github.com/xunit/xunit)
+
 
 ## Links
 
 * [The art of unit testing](https://www.amazon.com/Art-Unit-Testing-examples/dp/1617290890/)
 * [xUnit Test Patterns Refactoring Code](https://www.amazon.com/xUnit-Test-Patterns-Refactoring-Code/dp/0131495054/)
+
+## F.I.R.S.T. Expectations
+
+* Fast
+* Isolated/Independent
+* Repeatable
+* Self-Validating
+* Timely
 
 ## Examples
 
