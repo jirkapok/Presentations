@@ -1,7 +1,6 @@
 ﻿using NUnit.Framework;
 using System;
 using FluentAssertions;
-using NUnit.Framework.Interfaces;
 
 namespace Tests
 {
@@ -19,6 +18,7 @@ namespace Tests
 
             // cast ot object to avoid implicit DateTime comparison for test purposes
             // compare the error message with original code
+            // using FluentAssertions nuget package
             ((object)sut).Should().BeEquivalentTo(
             new {
                 Year = 3169,

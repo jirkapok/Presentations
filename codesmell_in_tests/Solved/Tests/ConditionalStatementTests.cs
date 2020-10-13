@@ -5,29 +5,24 @@ namespace Tests
     [TestFixture]
     public class ConditionalStatementTests
     {
-        // code smell: IF statement in test, or boolean parameter in helper method
+        // code smell fixed: IF statement in test, or boolean parameter in helper method
+
+        private const string testString = "Any string we want to concatenate";
+
         [Test]
-        public void Conditionals_in_tests_do_not_make_sense()
+        public void Insert_to_beginning()
         {
-            string testString = "Any string we want to concatenate";    
+            var expected = 'b' + testString;
+            var actual = testString.Insert(0, "b");
+            Assert.AreEqual(expected, actual);
+        }
 
-            for (int iter = 0; iter < 2; iter++)
-            {
-                var expected = testString;
-
-                if (iter == 0) // add at the beginning
-                {
-                    expected = 'b' + expected;
-                    testString = testString.Insert(0, "b");
-                }
-                else // add at the end
-                {
-                    expected += 'b';
-                    testString = testString.Insert(testString.Length, "b");
-                }
-
-                Assert.AreEqual(expected, testString);
-            }
+        [Test]
+        public void Insert_to_the_End()
+        {
+            var expected = testString + 'b';
+            var actual = testString.Insert(testString.Length, "b");
+            Assert.AreEqual(expected, actual);
         }
     }
 }
