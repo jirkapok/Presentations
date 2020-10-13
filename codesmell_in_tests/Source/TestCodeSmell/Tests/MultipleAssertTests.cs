@@ -4,7 +4,7 @@ using System;
 namespace Tests
 {
     [TestFixture]
-    public class MultipleAsserts
+    public class MultipleAssertTests
     {
         // code smell:
         // - custom assert method has lot of arguments

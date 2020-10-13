@@ -10,7 +10,7 @@ Purpose of this presentation was to show importance of tests quality and demonst
 * Unable to calculates statistics to find "The most common mistake", there is no such tool, only static code analysis, which needs to be setup for all studied repositories
 * Unable to study all repositories with all the code and merge numbers
 * Picked up only what was obvious and already known (from my own experience)
-* => Collected examples of code smells visible in source code
+* => **Ambitions not fulfilled**, only collected examples of code smells visible in source code
 
 ## Checked repositories
 

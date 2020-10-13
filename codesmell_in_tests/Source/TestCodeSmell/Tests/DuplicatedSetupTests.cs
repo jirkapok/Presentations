@@ -5,7 +5,7 @@ using Suite;
 namespace Tests
 {
     [TestFixture]
-    public class DuplicatedSetup
+    public class DuplicatedSetupTests
     {
         // code smell:
         // - Tests multiple things
