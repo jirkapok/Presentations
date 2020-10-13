@@ -24,11 +24,6 @@ Purpose of this presentation was to show importance of tests quality and demonst
 * [Chocolatey](https://github.com/chocolatey/choco)
 * [xUnit](https://github.com/xunit/xunit)
 
-## Links
-
-* [The art of unit testing](https://www.amazon.com/Art-Unit-Testing-examples/dp/1617290890/)
-* [xUnit Test Patterns Refactoring Code](https://www.amazon.com/xUnit-Test-Patterns-Refactoring-Code/dp/0131495054/)
-
 ## F.I.R.S.T. Expectations
 
 Unit tests should be:
@@ -57,10 +52,15 @@ Following examples are shown in format repo:FullClassPath.
 ## Recommendations
 
 * Take care of your code the same way you do with your production code
-* Refactor the code regularly
+* Refactor the code together when changing production code
 * The Unit tests are also written in Object oriented language, use it
 
 ## Side notes
 
 * To be able compile .net runtime `Python` is needed
 * [Behavior driven development](https://en.wikipedia.org/wiki/Behavior-driven_development) is used in Chocolatey repo, implemented using [TinySpec.NUnit](https://www.nuget.org/packages/TinySpec.NUnit)
+
+## Links
+
+* [The art of unit testing](https://www.amazon.com/Art-Unit-Testing-examples/dp/1617290890/)
+* [xUnit Test Patterns Refactoring Code](https://www.amazon.com/xUnit-Test-Patterns-Refactoring-Code/dp/0131495054/)
