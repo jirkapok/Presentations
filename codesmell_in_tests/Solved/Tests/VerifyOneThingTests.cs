@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using NUnit.Framework;
 
 namespace Tests
@@ -6,35 +7,44 @@ namespace Tests
     [TestFixture]
     public class VerifyOneThingTests
     {
-        // code smell:
+        // code smell fixed:
         // - multiple tests in one
         // - duplicate code in setup and teardown
         // - useless comments
         // - magic constants used
+
+        private static readonly char[] testChars = "0123456789".ToCharArray();
+
         [Test]
-        public void Should_have_only_one_responsibility()
+        public void Seek_past_the_end_from_beginning()
         {
-            // [] Seeking past the end from middle
-            var mstr = new MemoryStream();
-            var dw2 = new BinaryWriter(mstr);
-            dw2.Write("0123456789".ToCharArray());
-            var lReturn = dw2.Seek(4, SeekOrigin.End); //This won't throw any exception now.
+            WithStreams((memory, writer) =>
+            {
+                writer.Seek(11, SeekOrigin.Begin);
+                Assert.That(11, Is.EqualTo(memory.Position));
+            });
+        }
 
-            Assert.That(14, Is.EqualTo(mstr.Position));
+        [Test]
+        public void Seeking_past_end_from_middle()
+        {
+            WithStreams((memory, writer) =>
+            {
+                writer.Seek(4, SeekOrigin.End);
+                Assert.That(14, Is.EqualTo(memory.Position));
+            });
+        }
 
-            dw2.Dispose();
-            mstr.Dispose();
-
-            // [] Seek past the end from beginning
-            mstr = new MemoryStream();
-            dw2 = new BinaryWriter(mstr);
-            dw2.Write("0123456789".ToCharArray());
-            lReturn = dw2.Seek(11, SeekOrigin.Begin);  //This won't throw any exception now.
-
-            Assert.That(11, Is.EqualTo(mstr.Position));
-
-            dw2.Dispose();
-            mstr.Dispose();
+        private static void WithStreams(Action<MemoryStream, BinaryWriter> behavior)
+        {
+            using (var memory = new MemoryStream())
+            {
+                using (var writer = new BinaryWriter(memory))
+                {
+                    writer.Write(testChars);
+                    behavior(memory, writer);
+                }
+            }
         }
     }
 }
