@@ -24,13 +24,14 @@ Purpose of this presentation was to show importance of tests quality and demonst
 * [Chocolatey](https://github.com/chocolatey/choco)
 * [xUnit](https://github.com/xunit/xunit)
 
-
 ## Links
 
 * [The art of unit testing](https://www.amazon.com/Art-Unit-Testing-examples/dp/1617290890/)
 * [xUnit Test Patterns Refactoring Code](https://www.amazon.com/xUnit-Test-Patterns-Refactoring-Code/dp/0131495054/)
 
 ## F.I.R.S.T. Expectations
+
+Unit tests should be:
 
 * Fast
 * Isolated/Independent
