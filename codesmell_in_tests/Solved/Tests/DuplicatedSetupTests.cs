@@ -7,30 +7,32 @@ namespace Tests
     [TestFixture]
     public class DuplicatedSetupTests
     {
-        // code smell:
+        // code smell fixed:
         // - Tests multiple things
         // - use less comments
         // - Repeated setup
 
+        private readonly Disposable sut = new Disposable(); // dummy setup
+
         [Test]
-        public void Merge_repeated_code_snd_test_only_one_thing()
+        public void Repeat_Dispose()
         {
-            // Execute after dispose.
             Assert.Throws<ObjectDisposedException>(
                 () =>
                 {
-                    var sut = new Disposable();
+                    sut.Dispose();
+                    sut.Dispose();
+                });
+        }
+
+        [Test]
+        public void Execute_After_Dispose()
+        {
+            Assert.Throws<ObjectDisposedException>(
+                () =>
+                {
                     sut.Dispose();
                     sut.Execute();
-                });
-
-            // Repeated dispose
-            Assert.Throws<ObjectDisposedException>(
-                () =>
-                {
-                    var sut = new Disposable();
-                    sut.Dispose();
-                    sut.Dispose();
                 });
         }
     }
