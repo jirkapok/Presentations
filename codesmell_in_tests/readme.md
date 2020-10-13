@@ -1,6 +1,6 @@
 # Code smell in tests
 
-Purpose of this presentation was to show importance of tests quality and demonstrate how these smells can be improved. As usually each code smell has its own directory with source code. There are two solutions, one with example and one with example solution.
+This presentation was part of the Windows user group days 2020. Purpose of it was to show importance of tests quality and demonstrate how these smells can be improved. As usually each code smell has its own directory with source code. There are two solutions, one with source code smells and one with example solution.
 
 > **NOTE**: The presented solutions don't represent the only solution nor lead to better or shorter code in all case.
 
