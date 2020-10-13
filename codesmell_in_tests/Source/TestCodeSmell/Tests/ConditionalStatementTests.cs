@@ -5,6 +5,7 @@ namespace Tests
     [TestFixture]
     public class ConditionalStatementTests
     {
+        // code smell: IF statement in test, or boolean parameter in helper method
         [Test]
         public void Conditionals_in_tests_do_not_make_sense()
         {
