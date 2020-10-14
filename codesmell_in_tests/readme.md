@@ -53,10 +53,12 @@ Following examples are shown in format repo:FullClassPath.
 
 * Take care of your code the same way you do with your production code
 * Refactor the code together when changing production code
-* The Unit tests are also written in Object oriented language, use it
+* The Unit tests are also written in Object oriented language, use the OOP principles also in tests
 
 ## Side notes
 
+* Most .Net repositories use xUnit as testing framework
+* xUnit uses it self to test its behavior (as good framework should do)
 * To be able compile .net runtime `Python` is needed
 * [Behavior driven development](https://en.wikipedia.org/wiki/Behavior-driven_development) is used in Chocolatey repo, implemented using [TinySpec.NUnit](https://www.nuget.org/packages/TinySpec.NUnit)
 
