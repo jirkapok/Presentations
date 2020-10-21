@@ -67,3 +67,5 @@ Following examples are shown in format repo:FullClassPath.
 * [The art of unit testing](https://www.amazon.com/Art-Unit-Testing-examples/dp/1617290890/)
 * [xUnit Test Patterns Refactoring Code](https://www.amazon.com/xUnit-Test-Patterns-Refactoring-Code/dp/0131495054/)
 * [xUnit Test Patterns](http://xunitpatterns.com/) (online version)
+* [Test frameworks comparison](https://xunit.net/docs/comparisons)
+* [Test frameworks integration into Visual Studio](https://docs.microsoft.com/en-us/visualstudio/test/live-unit-testing?view=vs-2019#supported-test-frameworks)
