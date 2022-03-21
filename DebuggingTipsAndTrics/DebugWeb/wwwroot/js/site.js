@@ -1,6 +1,4 @@
-﻿/// <reference path="jquery-1.10.2.js" />
-
-$(function () {
+﻿$(function () {
 
     window.debugButtonClick = function() {
         debugger;
