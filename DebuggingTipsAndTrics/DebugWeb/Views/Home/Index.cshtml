@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form method="post">
+    <div class="text-center jumbotron">
+        <h1 class="display-4">Welcome</h1>
+        <div>
+            <button class="btn btn-primary" asp-controller="Home"  asp-action="ThrowException">Throw an error</button>
+        </div>
+        <div class="m-1">
+            <button class="btn" onclick="debugButtonClick()">Debbug</button>
+        </div>
+    </div>
+</form>
