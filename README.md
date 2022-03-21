@@ -11,6 +11,7 @@ All examples contain their own directory, readme, original state and solutions.
 * [Test-able code](./TestableCalculator/readme.md)
 * [Nugets Chocolatey and other confectionery](./NugetsChocolateyOneGet/readme.md)
 * [Code smell in tests](./codesmell_in_tests/readme.md)
+* [Debugging tips and trics](./DebuggingTipsAndTrics/readme.md)
 
 ## [Contribution](./CONTRIBUTING.md)
 
