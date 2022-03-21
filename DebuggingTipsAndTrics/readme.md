@@ -8,4 +8,4 @@ There are two projects used only to demonstrate example application, there is no
 
 ## Requirements
 
-* Visual Studio 2019 C#, dotnet 4.8 and dotnet core 3.1 
+* Visual Studio 2022 C#, dotnet 6
