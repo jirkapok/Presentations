@@ -7,7 +7,7 @@ namespace DebuggingTipsAndTricks
     {
         /// <summary>
         /// 1. What are the project.vshost.exe processes?
-        /// Visual studio hosting process: https://msdn.microsoft.com/en-us/library/ms242202.aspx
+        /// Tools->Options->Debugging->Automatically close the console when debugging stops
         /// Enable startup arguments in project properties.
         /// Task manager/Process Explorer: Right click on Columns > select columns - PID, command line.
         /// 
@@ -17,10 +17,10 @@ namespace DebuggingTipsAndTricks
         /// Debug Windows > Modules
         /// 
         /// 3. Remote debugger
-        /// https://msdn.microsoft.com/en-us/library/y7f5zaaa.aspx?f=255&MSPPError=-2147217396
+        /// https://docs.microsoft.com/en-us/visualstudio/debugger/remote-debugging?view=vs-2022
         /// 
         /// 4. Fuslogvw.exe (Assembly Binding Log Viewer)
-        /// https://msdn.microsoft.com/en-us/library/e74a18c4(v=vs.110).aspx
+        /// https://docs.microsoft.com/en-us/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer
         /// From developer command prompt as administrator: fuslogvw
         /// Setttings: Log bind failures to disk, Enable Custom log path (full path to the directory)
         ///  </summary>
