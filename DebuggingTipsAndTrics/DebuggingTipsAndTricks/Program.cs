@@ -36,7 +36,10 @@ namespace DebuggingTipsAndTricks
             var pid = Process.GetCurrentProcess().Id;
             Console.WriteLine("Process ID: {0}", pid);
 
-            //ExternalLogging.Log("Put it to the log...");
+            // IF the log4net.dll is removed from directory, than this line fails
+            // use Fuslogvwr to show the binding error in net 45 and older
+            // for net6.0 it is shown only in console
+            ExternalLogging.Log("Put it to the log...");
 
             CallStack.FirstCall();
 
