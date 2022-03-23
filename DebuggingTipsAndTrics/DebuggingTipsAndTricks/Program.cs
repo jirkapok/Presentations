@@ -39,6 +39,7 @@ namespace DebuggingTipsAndTricks
             // IF the log4net.dll is removed from directory, than this line fails
             // use Fuslogvwr to show the binding error in net 45 and older
             // for net6.0 it is shown only in console
+            // For net6.0: https://docs.microsoft.com/en-us/dotnet/core/dependency-loading/collect-details
             ExternalLogging.Log("Put it to the log...");
 
             CallStack.FirstCall();
