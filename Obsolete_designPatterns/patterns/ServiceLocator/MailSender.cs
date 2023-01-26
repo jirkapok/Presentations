@@ -1,5 +1,3 @@
-namespace patterns.ServiceLocator;
-
 public interface IMailSender
 {
     void Send(string toAddress, string subject);

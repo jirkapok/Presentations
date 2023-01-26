@@ -1,4 +1,3 @@
-using System.Runtime;
 using Ninject;
 
 namespace patterns.ServiceLocator;
