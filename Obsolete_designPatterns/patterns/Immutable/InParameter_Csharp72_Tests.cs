@@ -1,7 +1,7 @@
 ﻿namespace patterns.Immutable;
 
 [TestFixture]
-public class ImmutableTests
+public class InParameter_Csharp72_Tests
 {
     private static void ProcessClass(in ContainerClass toModify)
     {
