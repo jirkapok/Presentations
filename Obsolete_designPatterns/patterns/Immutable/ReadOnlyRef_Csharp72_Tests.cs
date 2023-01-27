@@ -18,7 +18,7 @@ public class ReadOnlyRef_Csharp72_Tests
     }
 
     [Test]
-    public void InParameter_On_Class()
+    public void RefReadOnly_On_Class()
     {
         var sut = new ContainerClass();
         var result = ProcessClass(ref sut);
@@ -31,7 +31,7 @@ public class ReadOnlyRef_Csharp72_Tests
 
 
     [Test]
-    public void InParameter_On_Struct()
+    public void RefReadOnly_On_Struct()
     {
         var sut = new ContainerStruct() { Name = "ccc" };
         var result = ProcessStruct(ref sut);
