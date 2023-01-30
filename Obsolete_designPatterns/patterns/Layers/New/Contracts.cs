@@ -1,16 +1,24 @@
-﻿namespace patterns.Layers.New.Contracts;
-
-public interface IView
+﻿// Simplified by defining only one interface for all feature services
+// i.e. there should be IViewFeatureA, IViewFeatureB etc.
+namespace patterns.Layers.New.Contracts.UI
 {
-    void View();
+    // View and Bl in the same namespace: view defines it self, and BL requirements
+    public interface IView
+    {
+        void View();
+    }
+
+    public interface IBL
+    {
+        void Do();
+    }
 }
 
-public interface IBL
+// Interface is defined by the consumer, i.e. BL defines, which Dal services it needs
+namespace patterns.Layers.New.Contracts.BL
 {
-    void Do();
-}
-
-public interface IDal
-{
-    void Get();
+    public interface IDal
+    {
+        void Get();
+    }
 }

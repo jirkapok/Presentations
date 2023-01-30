@@ -1,32 +1,40 @@
-﻿using patterns.Layers.New.Contracts;
+﻿using patterns.Layers.New.Contracts.BL;
+using patterns.Layers.New.Contracts.UI;
 
-namespace patterns.Layers.FeatureC;
-
-public class UI_C: IView
+namespace patterns.Layers.FeatureC.UI
 {
-    private readonly IBL bl;
-
-    public UI_C(IBL bl)
+    public class UI_C : IView
     {
-        this.bl = bl;
-    }
+        private readonly IBL bl;
 
-    public void View() { }
+        public UI_C(IBL bl)
+        {
+            this.bl = bl;
+        }
+
+        public void View() { }
+    }
 }
 
-public class BL_C: IBL
+namespace patterns.Layers.FeatureC.BL
 {
-    private IDal dal;
-
-    public BL_C(IDal dal)
+    public class BL_C : IBL
     {
-        this.dal = dal;
-    }
+        private IDal dal;
 
-    public void Do() { }
+        public BL_C(IDal dal)
+        {
+            this.dal = dal;
+        }
+
+        public void Do() { }
+    }
 }
 
-public class Dal_C: IDal
+namespace patterns.Layers.FeatureC.Dal
 {
-    public void Get() { }
+    public class Dal_C : IDal
+    {
+        public void Get() { }
+    }
 }
