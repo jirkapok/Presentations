@@ -1,22 +1,31 @@
-﻿namespace patterns.Layers.Old.Contracts;
+﻿// Each layer declares it own interfaces
 
-public interface IUI
+namespace patterns.Layers.Old.UI
 {
-    void ViewA() { }
-    void ViewB() { }
-    void ViewC() { }
+    public interface IUI
+    {
+        void ViewA() { }
+        void ViewB() { }
+        void ViewC() { }
+    }
 }
 
-public interface IBL
+namespace patterns.Layers.Old.BL
 {
-    void DoA() { }
-    void DoB() { }
-    void DoC() { }
+    public interface IBL
+    {
+        void DoA() { }
+        void DoB() { }
+        void DoC() { }
+    }
 }
 
-public interface IDal
+namespace patterns.Layers.Old.Dal
 {
-    void GetA() { }
-    void GetB() { }
-    void GetC() { }
+    public interface IDal
+    {
+        void GetA() { }
+        void GetB() { }
+        void GetC() { }
+    }
 }

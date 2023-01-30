@@ -1,8 +1,6 @@
-﻿using patterns.Layers.Old.Contracts;
+﻿namespace patterns.Layers.Old.Dal;
 
-namespace patterns.Layers.Old;
-
-public class Dal: IDal
+public class AppDal: IDal
 {
     public void GetA() { }
     public void GetB() { }

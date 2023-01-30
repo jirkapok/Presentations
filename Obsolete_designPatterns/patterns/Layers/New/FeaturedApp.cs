@@ -1,5 +1,6 @@
 ﻿using patterns.Layers.FeatureA;
 using patterns.Layers.FeatureB;
+using patterns.Layers.FeatureC;
 using patterns.Layers.New.Contracts;
 
 namespace patterns.Layers.New;

@@ -1,12 +1,12 @@
-﻿using patterns.Layers.Old.Contracts;
+﻿using patterns.Layers.Old.Dal;
 
-namespace patterns.Layers.Old;
+namespace patterns.Layers.Old.BL;
 
-public class BL: IBL
+public class AppBL: IBL
 {
-    private Dal dal;
+    private IDal dal;
 
-    public BL(Dal dal)
+    public AppBL(IDal dal)
     {
         this.dal = dal;
     }

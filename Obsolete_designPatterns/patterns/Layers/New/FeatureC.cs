@@ -1,6 +1,6 @@
 ﻿using patterns.Layers.New.Contracts;
 
-namespace patterns.Layers.New;
+namespace patterns.Layers.FeatureC;
 
 public class UI_C: IView
 {

@@ -1,12 +1,12 @@
-﻿using patterns.Layers.Old.Contracts;
+﻿using patterns.Layers.Old.BL;
 
-namespace patterns.Layers.Old;
+namespace patterns.Layers.Old.UI;
 
-public class UI
+public class AppUI: IUI
 {
     private readonly IBL bl;
 
-    public UI(IBL bl)
+    public AppUI(IBL bl)
     {
         this.bl = bl;
     }
