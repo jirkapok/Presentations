@@ -1,0 +1,20 @@
+{
+  "name": "typescript5_new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jasmine": "^4.3.1",
+    "@types/node": "^18.13.0",
+    "karma": "^6.4.1",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-jasmine": "^5.1.0",
+    "karma-typescript": "^5.5.3",
+    "typescript": "^5.0.0-beta"
+  }
+}

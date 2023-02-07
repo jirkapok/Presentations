@@ -13,6 +13,7 @@ All examples contain their own directory, readme, original state and solutions.
 * [Code smell in tests](./codesmell_in_tests/readme.md)
 * [Debugging tips and trics](./DebuggingTipsAndTrics/readme.md)
 * [Obsolete design patterns](./Obsolete_designPatterns)
+* [TypeScript 5 news](./TypeScript5_News/readme.md)
 
 ## [Contribution](./CONTRIBUTING.md)
 
