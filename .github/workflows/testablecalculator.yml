@@ -8,7 +8,7 @@ on:
 
 jobs:
 
-  build:
+  CI:
 
     strategy:
       matrix:
@@ -36,7 +36,7 @@ jobs:
       uses: microsoft/setup-msbuild@v1.1
 
     # Restore the application to populate the obj folder with RuntimeIdentifiers
-    - name: Restore the application
+    - name: Restore
       run: msbuild $env:Solution_Name /t:Restore /p:Configuration=$env:Configuration
       env:
         Configuration: ${{ matrix.configuration }}
@@ -45,5 +45,14 @@ jobs:
     - name: Build
       run: dotnet build $env:Solution_Name
 
-    - name: Execute unit tests
-      run: dotnet test $env:Test_Project_Path
+    - name: Test
+      run: dotnet test $env:Test_Project_Path --logger "trx;logfilename=testResults.trx"
+      
+    - name: Test Report
+      uses: dorny/test-reporter@v1.6.0
+      if: success() || failure()    # run this step even if previous step failed
+      with:
+        name: MSTests
+        path: TestableCalculator/Solved/Tests/TestResults/testResults.trx
+        fail-on-error: 'false' # sincet the localdb tests configuration
+        reporter: dotnet-trx 
