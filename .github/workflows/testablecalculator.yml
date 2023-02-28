@@ -12,13 +12,13 @@ jobs:
 
     strategy:
       matrix:
-        configuration: [Debug, Release]
+        configuration: [Release]
 
     runs-on: windows-latest
 
     env:
-      Solution_Name: your-solution-name 
-      Test_Project_Path: your-test-project-path
+      Solution_Name: TestableCalculator\Solved\Calculator.sln 
+      Test_Project_Path: TestableCalculator\Solved\Tests\Tests.csproj
 
     steps:
     - name: Checkout
@@ -26,7 +26,6 @@ jobs:
       with:
         fetch-depth: 0
 
-    # Install the .NET Core workload
     - name: Install .NET Core
       uses: actions/setup-dotnet@v3
       with:
@@ -34,11 +33,7 @@ jobs:
 
     # Add  MSBuild to the PATH: https://github.com/microsoft/setup-msbuild
     - name: Setup MSBuild.exe
-      uses: microsoft/setup-msbuild@v1.0.2
-
-    # Execute all unit tests in the solution
-    - name: Execute unit tests
-      run: dotnet test
+      uses: microsoft/setup-msbuild@v1.1
 
     # Restore the application to populate the obj folder with RuntimeIdentifiers
     - name: Restore the application
@@ -46,3 +41,9 @@ jobs:
       env:
         Configuration: ${{ matrix.configuration }}
 
+    # Execute all unit tests in the solution
+    - name: Build
+      run: dotnet build $env:Solution_Name
+
+    - name: Execute unit tests
+      run: dotnet test $env:Test_Project_Path
