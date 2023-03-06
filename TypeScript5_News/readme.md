@@ -13,3 +13,4 @@ You can switch the VS Code typescript version to see, which lines you are unable
 * All Enums are union types
 * Export "type *"
 * JSDoc @satisfies
+* JSDoc @overload
