@@ -11,3 +11,5 @@ You can switch the VS Code typescript version to see, which lines you are unable
 
 * Const type parameters
 * All Enums are union types
+* Export "type *"
+* JSDoc @satisfies
