@@ -2,8 +2,7 @@
   "name": "typescript5_new",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
+    "scripts": {
     "test": "karma start",
     "build": "tsc"
   },
