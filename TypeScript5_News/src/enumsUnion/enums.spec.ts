@@ -7,10 +7,15 @@ describe("Enums", () => {
     });
 
     it("Enum is type union", () => {
-        // selectContinent(5);  // Error value not assignable to Continents
-        let found =  selectContinent(Continents.Europe); // required enum value
+        selectContinent(5);
+        let found: SelectedContinents =  selectContinent(Continents.Europe); // required enum value
 
-        // found = Continents.Asia; // not possible
+        found = Continents.Africa; // not possible
+        console.log(found === 10);
+        console.log(found);
+        console.log(Continents["Africa"]);
+        console.log(Continents[10]);
+
         expect(found).toEqual(Continents.Africa);
     });
 });
