@@ -4,8 +4,8 @@
 // BenchmarkRunner.Run<Boxing>();
 
 // debug examples
-new Boxing().TestBoxing();
-
+// new Boxing().TestBoxing();
+Datatypes.Run();
 
 
 // Based on following:
