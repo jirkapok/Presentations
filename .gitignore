@@ -331,3 +331,5 @@ ASALocalRun/
 
 # Karma coverage reports
 **/coverage/**/*
+
+TypeScript5_News/dist/
