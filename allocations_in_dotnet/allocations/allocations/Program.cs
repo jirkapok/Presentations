@@ -5,7 +5,8 @@
 
 // debug examples
 // new Boxing().TestBoxing();
-Datatypes.Run();
+// Datatypes.Call_ClassStruct();
+Datatypes.Call_Records();
 
 
 // TODO add more examples:
@@ -18,6 +19,8 @@ Datatypes.Run();
 // typical scenarios
 
 // Based on following:
+// stack vs. heap https://endjin.com/blog/2022/07/understanding-the-stack-and-heap-in-csharp-dotnet
+// What are the limits of stack? https://stackoverflow.com/questions/823724/stack-capacity-in-c-sharp
 // https://benchmarkdotnet.org/
 // https://plugins.jetbrains.com/plugin/9223-heap-allocations-viewer
 // https://www.youtube.com/watch?v=B2yOjLyEZk0
