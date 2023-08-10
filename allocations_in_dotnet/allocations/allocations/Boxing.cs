@@ -7,6 +7,6 @@ public class Boxing
     [Benchmark()]
     public void TestBoxing()
     {
-        Datatypes.TestBoxing();
+        Examples.TestBoxing();
     }
 }

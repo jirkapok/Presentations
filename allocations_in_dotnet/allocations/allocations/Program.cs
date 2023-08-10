@@ -5,8 +5,8 @@
 
 // debug examples
 // new Boxing().TestBoxing();
-// Datatypes.Call_ClassStruct();
-Datatypes.Call_Records();
+Examples.Call_ClassStruct();
+Examples.Call_Records();
 
 
 // TODO add more examples:
