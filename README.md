@@ -14,6 +14,7 @@ All examples contain their own directory, readme, original state and solutions.
 * [Debugging tips and trics](./DebuggingTipsAndTrics/readme.md)
 * [Obsolete design patterns](./Obsolete_designPatterns)
 * [TypeScript 5 news](./TypeScript5_News/readme.md)
+* [Alocations - back to basics](./allocations_in_dotnet/readme.md)
 
 ## [Contribution](./CONTRIBUTING.md)
 
