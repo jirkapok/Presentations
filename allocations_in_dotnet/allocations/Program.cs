@@ -1,9 +1,7 @@
 ﻿using allocations;
 
 // Run benchmarks only
-// BenchmarkRunner.Run<Boxing>();
+BenchmarkRunner.Run<AllocationTests>();
 
-// debug examples
-// new Boxing().TestBoxing();
-// Examples.Call_ClassStruct();
-Examples.Call_Records();
+// var allocations =  new AllocationTests();
+// allocations.GetEnumerator();
