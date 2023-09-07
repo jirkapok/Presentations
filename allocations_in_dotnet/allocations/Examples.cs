@@ -53,11 +53,11 @@ public static class Examples
     // Task vs. ValueTask
     internal static Task<int> ResolveTask()
     {
-        return Task.FromResult(5);
+        return new Task<int>(() => 5);
     }
 
     internal static ValueTask<int> ResolveValueTask()
     {
-        return ValueTask.FromResult(5);
+        return new ValueTask<int>(5);
     }
 }

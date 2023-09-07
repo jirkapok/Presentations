@@ -59,7 +59,7 @@ public class AllocationTests
     public async Task ResolveTask()
     {
         var task = Examples.ResolveTask();
-        var result =  task.GetAwaiter().GetResult();
+        var result =  await task;
     }
 
 
@@ -67,6 +67,6 @@ public class AllocationTests
     public async Task ResolveValueTask()
     {
         var task = Examples.ResolveValueTask();
-        var result = task.GetAwaiter().GetResult();
+        var result = await task;
     }
 }

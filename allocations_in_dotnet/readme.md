@@ -24,7 +24,7 @@
 // string allocations
 // compare large object heap and pinned objects
 // typical scenarios
-// System.Tupe vs. System.ValueTuple
+// System.Tuple vs. System.ValueTuple
 
 ## Based on following resources
 * https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/records
