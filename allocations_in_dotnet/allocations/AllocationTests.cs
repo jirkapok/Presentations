@@ -48,6 +48,18 @@ public class AllocationTests
         var source = new StructA();
         Examples.Call_ByReference(ref source);
     }
+    
+    [Benchmark()]
+    public void Closure()
+    {
+        var result = Examples.Closure();
+    }
+    
+    [Benchmark()]
+    public void Closure_WithCatchedParameter()
+    {
+        var result = Examples.Closure_WithCatchedParameter();
+    }
 
     //[Benchmark()]
     public void CreateArray()
@@ -61,19 +73,19 @@ public class AllocationTests
         var result = Examples.CreateEnumerator();
     }
     
-    [Benchmark()]
+    //[Benchmark()]
     public void String_Concatenation()
     {
         var result = Examples.String_Concatenation();
     }
     
-    [Benchmark()]
+    //[Benchmark()]
     public void String_Const()
     {
         var result = Examples.String_Const();
     }
     
-    [Benchmark()]
+    //[Benchmark()]
     public void StringBuilder()
     {
         var result = Examples.StringBuilder();

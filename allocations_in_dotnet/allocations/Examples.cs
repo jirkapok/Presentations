@@ -45,6 +45,19 @@ public static class Examples
         source.P1 = 2;
     }
 
+    internal static int Closure()
+    {
+        var action = () => 12;
+        return action();
+    }
+    
+    internal static int Closure_WithCatchedParameter()
+    {
+        int source = 11;
+        var action = () => source;
+        return action();
+    }
+    
     // compiler generated closure
     internal static IEnumerable<int> CreateEnumerator()
     {

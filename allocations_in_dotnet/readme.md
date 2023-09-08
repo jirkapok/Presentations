@@ -6,8 +6,14 @@
 
 ## Examples
 
-1. Compare boxing of input/output parameters
-2. Compare value/reference types
+1. Value types aren't always on stack
+   * Compare boxing of input/output parameters
+   * Call by reference/value
+   * Closures
+2. The type is not always what you thing
+   * Compare value/reference types
+   * String and arrays
+   * Tuple/ValueTuple, Task/ValueTask 
 
 
 ## Takeaways
@@ -20,11 +26,8 @@
 
 // TODO add more examples:
 // pointers
-// array allocations
-// string allocations
 // compare large object heap and pinned objects
 // typical scenarios
-// System.Tuple vs. System.ValueTuple
 
 ## Based on following resources
 * https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/records
