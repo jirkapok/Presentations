@@ -1,4 +1,6 @@
-﻿namespace allocations;
+﻿using System.Text;
+
+namespace allocations;
 
 public static class Examples
 {
@@ -44,10 +46,32 @@ public static class Examples
     }
 
     // compiler generated closure
-    internal static IEnumerable<int> GetNumbersEnumerator()
+    internal static IEnumerable<int> CreateEnumerator()
     {
         yield return 1;
         yield return 2;
+    }
+
+    internal static int[] Create_Array()
+    {
+        return new[] { 3, 4 };
+    }
+    
+    internal static string String_Concatenation()
+    {
+        return "ab" + 9;
+    }
+    
+    internal static string String_Const()
+    {
+        return "abc";
+    }
+    
+    internal static string StringBuilder()
+    {
+        var builder = new StringBuilder();
+        builder.Append("abc");
+        return builder.ToString();
     }
 
     // Task vs. ValueTask
@@ -59,5 +83,16 @@ public static class Examples
     internal static ValueTask<int> ResolveValueTask()
     {
         return new ValueTask<int>(5);
+    }
+
+    // Tuple vs. ValueTuple
+    internal static Tuple<int, int> CreateTuple()
+    {
+        return new Tuple<int, int>(5, 6);
+    }
+
+    internal static ValueTuple<int, int> CreateValueTuple()
+    {
+        return new ValueTuple<int, int>(7, 8);
     }
 }
