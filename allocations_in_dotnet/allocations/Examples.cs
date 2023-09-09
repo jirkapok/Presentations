@@ -45,17 +45,20 @@ public static class Examples
         source.P1 = 2;
     }
 
+    private static readonly int[] numbers = new[] { 1, 3, 5, 7, 9 }; 
+
     internal static int Closure()
     {
-        var action = () => 12;
-        return action();
+        const int source = 1; // constant is inlined to the lambda
+        var result = numbers.Count(n => n > source);
+        return result;
     }
     
     internal static int Closure_WithCatchedParameter()
     {
-        int source = 11;
-        var action = () => source;
-        return action();
+        int source = 1;
+        var result = numbers.Count(n => n > source);
+        return result;
     }
     
     // compiler generated closure
