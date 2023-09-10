@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		readme.md = readme.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Allocation_Benchmarks", "Allocation_Benchmarks\Allocation_Benchmarks.csproj", "{DC33F24F-E6AF-4C81-B56A-10D2EDBDF993}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{E35DC489-EBFF-4AA9-8DCA-F05A36E7D6DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E35DC489-EBFF-4AA9-8DCA-F05A36E7D6DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E35DC489-EBFF-4AA9-8DCA-F05A36E7D6DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC33F24F-E6AF-4C81-B56A-10D2EDBDF993}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC33F24F-E6AF-4C81-B56A-10D2EDBDF993}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC33F24F-E6AF-4C81-B56A-10D2EDBDF993}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC33F24F-E6AF-4C81-B56A-10D2EDBDF993}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -73,7 +73,6 @@
 * ValueTask: <https://sd.blackball.lv/articles/read/19153-valuetask-vs-task-in-csharp-when-to-use-which>
 * ValueTask: <https://levelup.gitconnected.com/task-vs-valuetask-in-c-net-ad84e7cd9e5b>
 * stackallock keyword: <https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/stackalloc>
-* Write allocation free code: <https://youtu.be/B2yOjLyEZk0>
 * How GC works: <https://youtu.be/BeuNvhd1L_g>
 * GC: <https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/fundamentals>
 * Large object heap: <https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/large-object-heap>
@@ -86,5 +85,5 @@
 * Understanding GC: <https://stackoverflow.com/questions/17130382/understanding-garbage-collection-in-net/17131389#17131389>
 * Dispose pattern: <https://youtu.be/CV5UlcfFls4>
 * Benchmark.Net: <https://youtu.be/H6BRyRAZEd4>
-* https://youtu.be/nK54s84xRRs
-
+* Writing allocation free code: <https://youtu.be/nK54s84xRRs>
+* Write allocation free code: <https://youtu.be/B2yOjLyEZk0>

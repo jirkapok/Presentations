@@ -1,6 +1,7 @@
-using System.Threading.Tasks;
+using allocations;
+using BenchmarkDotNet.Attributes;
 
-namespace allocations;
+namespace Allocation_Benchmarks;
 
 [ShortRunJob]
 [MemoryDiagnoser]
