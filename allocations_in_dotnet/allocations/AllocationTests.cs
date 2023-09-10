@@ -17,6 +17,12 @@ public class AllocationTests
     {
         Examples.NoBoxing();
     }
+    
+    [Benchmark()]
+    public void ArrayOnStack()
+    {
+        Examples.ArrayOnStack();
+    }
 
     //[Benchmark()]
     public void Create_Class()
@@ -49,13 +55,13 @@ public class AllocationTests
         Examples.Call_ByReference(ref source);
     }
     
-    [Benchmark()]
+    //[Benchmark()]
     public void Closure()
     {
         var result = Examples.Closure();
     }
     
-    [Benchmark()]
+    //[Benchmark()]
     public void Closure_WithCatchedParameter()
     {
         var result = Examples.Closure_WithCatchedParameter();

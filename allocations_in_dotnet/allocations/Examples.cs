@@ -18,6 +18,18 @@ public static class Examples
         int source = Random.Shared.Next(0, 10000);
         return source;
     }
+    
+    internal static void ArrayOnStack()
+    {
+        int length = 10;
+        Span<int> arrayOnStack = stackalloc int[length];
+        
+        for (var i = 0; i < length; i++)
+        {
+            arrayOnStack[i] = i;
+        }
+    }
+    
 
     internal static void Create_Class()
     {
@@ -70,6 +82,7 @@ public static class Examples
 
     internal static int[] Create_Array()
     {
+        // extract to static readonly field to prevent allocation every time
         return new[] { 3, 4 };
     }
     
