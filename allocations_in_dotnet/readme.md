@@ -16,8 +16,8 @@
 2. How many heaps do we have in .net?
 3. How large is the stack in .net?
 4. Does the local variable survive till end of a method?
-5. There is one dedicated thread for GC?
-6. When does the GC collection occurs?
+5. When does the GC collection occurs?
+6. There is one dedicated thread for GC?
 7. What is the priority of GC thread?
 
 ## Examples = My corrected misunderstandings
@@ -25,7 +25,7 @@
 1. Allocations are expensive - No, expensive is Garbage collection
    * Allocation is move pointer of next free space after the newly allocated object
    * Large object allocation is expensive, because CLR guaranties its cleared.
-   * GC does not count references to an object, it searches unreachable object from the roots
+   * GC does not count references to an object, it searches unreachable object from the roots (mark and sweep strategy)
    * Generations try to prevent memory fragmentation
    * There is a difference between Server and Client GC, ephemeral segment size
    * We have more heaps in .net (GC generations, + e.g. large objects/85 KB heap + pinned objects (.net 5+)),
@@ -69,17 +69,22 @@
 * Records: https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/records
 * Span: <https://youtu.be/MGCNS6s6e5o>
 * Where are value types allocated: <https://youtu.be/jONSIhMST9E>
-* stackallock: <https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/stackalloc>
+* Boxing: <https://youtu.be/GVJ5EUhWQBc>
+* ValueTask: <https://sd.blackball.lv/articles/read/19153-valuetask-vs-task-in-csharp-when-to-use-which>
+* ValueTask: <https://levelup.gitconnected.com/task-vs-valuetask-in-c-net-ad84e7cd9e5b>
+* stackallock keyword: <https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/stackalloc>
+* Write allocation free code: <https://youtu.be/B2yOjLyEZk0>
 * How GC works: <https://youtu.be/BeuNvhd1L_g>
-* Server GC: <https://youtu.be/y7FTxAqExyU>
-* Change GD behavior (heap count): <https://learn.microsoft.com/en-us/dotnet/core/runtime-config/garbage-collector>
+* GC: <https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/fundamentals>
 * Large object heap: <https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/large-object-heap>
-
-* Dispose pattern: <https://youtu.be/CV5UlcfFls4>
+* Pinned object heap: <https://devblogs.microsoft.com/dotnet/internals-of-the-poh/>
+* Pinning objects: <https://youtu.be/troNdmHEu2g>
+* Fixed keyword: <https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/fixed>
+* Server GC: <https://youtu.be/y7FTxAqExyU>
+* Server GC: <https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/workstation-server-gc>
+* Change GC behavior (heap count): <https://learn.microsoft.com/en-us/dotnet/core/runtime-config/garbage-collector>
 * Understanding GC: <https://stackoverflow.com/questions/17130382/understanding-garbage-collection-in-net/17131389#17131389>
-
-* https://www.youtube.com/watch?v=B2yOjLyEZk0
-* https://youtu.be/H6BRyRAZEd4
+* Dispose pattern: <https://youtu.be/CV5UlcfFls4>
+* Benchmark.Net: <https://youtu.be/H6BRyRAZEd4>
 * https://youtu.be/nK54s84xRRs
 
-  

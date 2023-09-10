@@ -122,11 +122,13 @@ public static class Examples
     // Task vs. ValueTask
     internal static Task<int> ResolveTask()
     {
+        // class
         return new Task<int>(() => 5);
     }
 
     internal static ValueTask<int> ResolveValueTask()
     {
+        // structure
         return new ValueTask<int>(5);
     }
 
