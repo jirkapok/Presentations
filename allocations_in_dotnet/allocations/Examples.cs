@@ -86,6 +86,22 @@ public static class Examples
         return new[] { 3, 4 };
     }
     
+    internal static int[] Slice_ToArray()
+    {
+        var result = numbers.Skip(1).Take(3)
+            .ToArray();
+        return result;
+    }
+    
+    internal static Span<int> Slice_Span()
+    {
+        // In older .net see ArraySegment or StringSegment classes
+        var result =  numbers.AsSpan()
+            .Slice(1, 3);
+        return result;
+    }
+    
+    // TODO improve string examples
     internal static string String_Concatenation()
     {
         return "ab" + 9;
@@ -124,4 +140,6 @@ public static class Examples
     {
         return new ValueTuple<int, int>(7, 8);
     }
+    
+    
 }

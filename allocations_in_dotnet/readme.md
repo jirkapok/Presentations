@@ -8,6 +8,18 @@
     * IL view
     * Use memory view
 
+> This presentation is an excuse, dedicated to my students who heard from me through the years a lot of lies.
+
+## Questions
+
+1. Are value types always on stack and reference types on the heap?
+2. How many heaps do we have in .net?
+3. How large is the stack in .net?
+4. Does the local variable survive till end of a method?
+5. There is one dedicated thread for GC?
+6. When does the GC collection occurs?
+7. What is the priority of GC thread?
+
 ## Examples = My corrected misunderstandings
 
 1. Allocations are expensive - No, expensive is Garbage collection
@@ -39,27 +51,33 @@
 
 * Always measure before refactoring
 * Think about garbage collections, because Allocation is cheap
-* Platform matters, you need to know what compiler generates, how your app is configured for GC
+* Platform matters, you need to know what compiler generates, how your app is configured
 * Allocate a pool of large objects that you reuse instead of allocating temporary ones
 
 // TODO add more examples:
 // compare large object heap and pinned objects
 * TODO max number of stack frames before stack overflow?
-* TODO stackalloc
+
 
 ## Based on following resources
 
-* Records: https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/records
 * stack vs. heap: https://endjin.com/blog/2022/07/understanding-the-stack-and-heap-in-csharp-dotnet
+* Stack vs. heap: <https://youtu.be/5OJRqkYbK-4>
+* Stack by Scot Hanselmann: <https://youtu.be/03pp6cz8lWo>
 * What are the limits of stack? https://stackoverflow.com/questions/823724/stack-capacity-in-c-sharp
 * Closures: <https://youtu.be/h3MsnBRqzcY>
-* Stack by Scot Hanselmann: <https://youtu.be/03pp6cz8lWo>
-* How GC works: <https://youtu.be/BeuNvhd1L_g>
+* Records: https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/records
+* Span: <https://youtu.be/MGCNS6s6e5o>
 * Where are value types allocated: <https://youtu.be/jONSIhMST9E>
+* stackallock: <https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/stackalloc>
+* How GC works: <https://youtu.be/BeuNvhd1L_g>
 * Server GC: <https://youtu.be/y7FTxAqExyU>
 * Change GD behavior (heap count): <https://learn.microsoft.com/en-us/dotnet/core/runtime-config/garbage-collector>
 * Large object heap: <https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/large-object-heap>
-* stackallock: <https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/stackalloc>
+
+* Dispose pattern: <https://youtu.be/CV5UlcfFls4>
+* Understanding GC: <https://stackoverflow.com/questions/17130382/understanding-garbage-collection-in-net/17131389#17131389>
+
 * https://www.youtube.com/watch?v=B2yOjLyEZk0
 * https://youtu.be/H6BRyRAZEd4
 * https://youtu.be/nK54s84xRRs

@@ -18,7 +18,7 @@ public class AllocationTests
         Examples.NoBoxing();
     }
     
-    [Benchmark()]
+    // [Benchmark()]
     public void ArrayOnStack()
     {
         Examples.ArrayOnStack();
@@ -77,6 +77,18 @@ public class AllocationTests
     public void CreateEnumerator()
     {
         var result = Examples.CreateEnumerator();
+    }
+    
+    [Benchmark()]
+    public void Slice_ToArray()
+    {
+        var result = Examples.Slice_ToArray();
+    }
+    
+    [Benchmark()]
+    public void Slice_Span()
+    {
+        var result = Examples.Slice_Span();
     }
     
     //[Benchmark()]
