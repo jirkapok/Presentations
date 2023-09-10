@@ -88,3 +88,5 @@
 * Benchmark.Net: <https://youtu.be/H6BRyRAZEd4>
 * Writing allocation free code: <https://youtu.be/nK54s84xRRs>
 * Write allocation free code: <https://youtu.be/B2yOjLyEZk0>
+* Stack size: <https://learn.microsoft.com/en-us/dotnet/api/system.reflection.portableexecutable.peheader?view=net-7.0>
+* Stack size why: <https://stackoverflow.com/questions/28656872/why-is-stack-size-in-c-sharp-exactly-1-mb>

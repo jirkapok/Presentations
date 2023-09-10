@@ -7,74 +7,74 @@ namespace Allocation_Benchmarks;
 [MemoryDiagnoser]
 public class AllocationTests
 {
-    //[Benchmark()]
+    [Benchmark()]
     public void Boxing()
     {
         BoxingExamples.Boxing();
     }
 
-    //[Benchmark()]
+    [Benchmark()]
     public void NoBoxing()
     {
         BoxingExamples.NoBoxing();
     }
     
-    // [Benchmark()]
+    [Benchmark()]
     public void ArrayOnStack()
     {
         ArrayExamples.ArrayOnStack();
     }
 
-    //[Benchmark()]
+    [Benchmark()]
     public void Create_Class()
     {
         ObjectCreationExamples.Create_Class();
     }
 
-    //[Benchmark()]
+    [Benchmark()]
     public void Create_Struct()
     {
         ObjectCreationExamples.Create_Struct();
     }
 
-    //[Benchmark()]
+    [Benchmark()]
     public void Create_Record()
     {
         ObjectCreationExamples.Create_Record();
     }
 
-    //[Benchmark()]
+    [Benchmark()]
     public void Create_RecordStruct()
     {
         ObjectCreationExamples.Create_RecordStruct();
     }
 
-    //[Benchmark()]
+    [Benchmark()]
     public void Call_ByReference()
     {
         var source = new StructA();
         CallExamples.Call_ByReference(ref source);
     }
     
-    //[Benchmark()]
+    [Benchmark()]
     public void Closure()
     {
         var result = CallExamples.Closure();
     }
     
-    //[Benchmark()]
+    [Benchmark()]
     public void Closure_WithCatchedParameter()
     {
         var result = CallExamples.Closure_WithCatchedParameter();
     }
 
-    //[Benchmark()]
+    [Benchmark()]
     public void CreateArray()
     {
         var result = ArrayExamples.Create_Array();
     }
     
-    //[Benchmark()]
+    [Benchmark()]
     public void CreateEnumerator()
     {
         var result = ArrayExamples.CreateEnumerator();
@@ -92,19 +92,19 @@ public class AllocationTests
         var result = ArrayExamples.Slice_Span();
     }
     
-    //[Benchmark()]
+    [Benchmark()]
     public void String_Concatenation()
     {
         var result = StringExamples.String_Concatenation();
     }
     
-    //[Benchmark()]
+    [Benchmark()]
     public void String_Const()
     {
         var result = StringExamples.String_Const();
     }
     
-    //[Benchmark()]
+    [Benchmark()]
     public void StringBuilder()
     {
         var result = StringExamples.StringBuilder();
@@ -117,7 +117,7 @@ public class AllocationTests
         var result =  await task;
     }
 
-    //[Benchmark()]
+    [Benchmark()]
     public async Task ResolveValueTask()
     {
         var task = ValueTypes.ResolveValueTask();

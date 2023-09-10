@@ -1,4 +1,5 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using System.Reflection;
+using System.Reflection.PortableExecutable;
 
 namespace allocations;
 
@@ -18,6 +19,19 @@ public static class Examples
                 var maxIndex = largeObjects.Count - 1;
                 largeObjects.RemoveAt(Random.Shared.Next(0, maxIndex));
             }
+        }
+    }
+
+    public static void DumpStackInfo()
+    {
+        var execPath = Assembly.GetExecutingAssembly().Location;
+        using var fs = new FileStream(@execPath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+        using var peReader = new PEReader(fs);
+
+        if (peReader.PEHeaders.PEHeader is PEHeader header)
+        {
+            Console.WriteLine($"Stack commit size:  {header.SizeOfStackCommit}");
+            Console.WriteLine($"Stack reserve:      {header.SizeOfStackReserve}");
         }
     }
 }

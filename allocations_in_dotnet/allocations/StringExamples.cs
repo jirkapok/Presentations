@@ -4,7 +4,6 @@ namespace allocations;
 
 public class StringExamples
 {
-    // TODO improve string examples
     public static string String_Concatenation()
     {
         return "ab" + 9;
