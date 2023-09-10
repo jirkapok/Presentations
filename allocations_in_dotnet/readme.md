@@ -7,6 +7,7 @@
 * Useful VS or Rider views:
     * IL view
     * Use memory view
+    * Perfmon performance counters
 
 > This presentation is an excuse, dedicated to my students who heard from me through the years a lot of lies.
 
