@@ -11,16 +11,6 @@
 
 > This presentation is an excuse, dedicated to my students who heard from me through the years a lot of lies.
 
-## Questions
-
-1. Are value types always on stack and reference types on the heap?
-2. How many heaps do we have in .net?
-3. How large is the stack in .net?
-4. Does the local variable survive till end of a method?
-5. When does the GC collection occurs?
-6. There is one dedicated thread for GC?
-7. What is the priority of GC thread?
-
 ## Examples = My corrected misunderstandings
 
 1. Allocations are expensive - No, expensive is Garbage collection
@@ -55,10 +45,6 @@
 * Platform matters, you need to know what compiler generates, how your app is configured
 * Allocate a pool of large objects that you reuse instead of allocating temporary ones
 
-// TODO add more examples:
-// compare large object heap and pinned objects
-* TODO max number of stack frames before stack overflow?
-
 
 ## Based on following resources
 
@@ -73,7 +59,7 @@
 * Boxing: <https://youtu.be/GVJ5EUhWQBc>
 * ValueTask: <https://sd.blackball.lv/articles/read/19153-valuetask-vs-task-in-csharp-when-to-use-which>
 * ValueTask: <https://levelup.gitconnected.com/task-vs-valuetask-in-c-net-ad84e7cd9e5b>
-* stackallock keyword: <https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/stackalloc>
+* stackalloc keyword: <https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/stackalloc>
 * How GC works: <https://youtu.be/BeuNvhd1L_g>
 * GC: <https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/fundamentals>
 * Large object heap: <https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/large-object-heap>
