@@ -7,4 +7,6 @@ public class Course(string name, int capacity, List<Person> students)
     public IEnumerable<Person> Students { get; init; } = students;
 
     public int Available => Capacity - Students.Count();
+
+    public IEnumerable<Person> Seniors => Students.Where(s => s.BirthDate.Year < DateTime.Now.Year - 65);
 }
