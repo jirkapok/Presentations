@@ -8,7 +8,7 @@ public class InitializeCollectionsTests
     [Test]
     public void Test2()
     {
-        var students = new List<Person>()
+        var students = new List<Student>()
         {
             new ("Karel", "Vokurka", DateTime.Today, Guid.NewGuid()),
             new ("Jan", "Veselý", DateTime.Today, Guid.NewGuid())
@@ -22,7 +22,7 @@ public class InitializeCollectionsTests
     [Test]
     public void Test2_Simplified()
     {
-        var students = new Fixture().CreateMany<Person>(2).ToList();
+        var students = new Fixture().CreateMany<Student>(2).ToList();
         var course = new Course("Math", 7, students);
 
         Assert.That(course.Available, Is.EqualTo(5));
@@ -34,7 +34,7 @@ public class InitializeCollectionsTests
         var fixture = new Fixture();
         var course = fixture.Build<Course>()
             .With(c => c.Capacity, 7)
-            .With(c => c.Students, fixture.CreateMany<Person>(2).ToList())
+            .With(c => c.Students, fixture.CreateMany<Student>(2).ToList())
             .Create();
 
         Assert.That(course.Available, Is.EqualTo(5));
