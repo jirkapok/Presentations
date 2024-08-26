@@ -36,6 +36,7 @@ public class WorkWithDateTimeTests
     [Test]
     public void Test3_FixValue_Stop_TheTime()
     {
+        // Another use case Entity Framework DbContextOptions<MyOptions> to share connection
         var fixedDate = new DateTime(2020, 3, 7);
         var fixture = new Fixture();
         fixture.Customize<DateTime>(c => c.FromFactory(() => fixedDate));
