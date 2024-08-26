@@ -4,3 +4,21 @@ public interface ISchool
 {
     public void SignIn(string courseName, Student student);
 }
+
+public interface ILibrary
+{
+    public void BorrowBook(string bookName, Student student);
+}
+
+
+public interface IRestaurant
+{
+    public void OrderFood(string foodName, Student student);
+}
+
+public class Campus(ISchool school, ILibrary library, IRestaurant restaurant)
+{
+    public ISchool School { get; } = school;
+    public ILibrary Library { get; } = library;
+    public IRestaurant Restaurant { get; } = restaurant;
+}
