@@ -12,7 +12,7 @@ public class InitializeComplexDataTests
     {
         var person = new Student("Karel", "Vokurka", DateTime.Today, Guid.NewGuid());
 
-        Assert.That(person.FullName, Is.Not.Null.Or.Empty);
+        Assert.That(person.FullName, Is.EqualTo("Karel Vokurka"));
     }
 
     [Test]

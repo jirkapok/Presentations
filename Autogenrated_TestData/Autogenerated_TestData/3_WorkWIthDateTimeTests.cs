@@ -26,7 +26,7 @@ public class WorkWithDateTimeTests
     {
         var fixture = new Fixture();
 
-        // TODO fix duplicit creation
+        // TODO fix duplicate creation
         var yerOffsets = new Queue<int>(new []{ 63, 68, 73, 63, 68, 73, });
         fixture.Customize<Student>(c => c.With(p => p.BirthDate, () => DateTime.Today.AddYears(-yerOffsets.Dequeue())));
 
