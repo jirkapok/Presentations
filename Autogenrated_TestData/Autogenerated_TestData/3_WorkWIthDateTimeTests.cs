@@ -26,11 +26,13 @@ public class WorkWithDateTimeTests
     {
         var fixture = new Fixture();
 
-        // TODO fix duplicate creation
-        var yerOffsets = new Queue<int>(new []{ 63, 68, 73, 63, 68, 73, });
-        fixture.Customize<Student>(c => c.With(p => p.BirthDate, () => DateTime.Today.AddYears(-yerOffsets.Dequeue())));
+        var yerOffsets = new Queue<int>(new []{ 63, 68, 73 });
+        var fromQueue = () => DateTime.Today.AddYears(-yerOffsets.Dequeue());
+        fixture.Customize<Student>(c => c.With(p => p.BirthDate, fromQueue));
 
-        var course = fixture.Create<Course>();
+        var course = fixture.Build<Course>()
+            .OmitAutoProperties()
+            .Create();
 
         Assert.That(course.Seniors.Count(), Is.EqualTo(2));
     }
