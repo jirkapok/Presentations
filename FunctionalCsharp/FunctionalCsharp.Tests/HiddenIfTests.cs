@@ -3,9 +3,8 @@ using NUnit.Framework;
 
 // Příklady:
 // * čím víc parametrů, tím víc Adidas
-//     * Funkcionální TestSetup
-//     * Když nevíš, tak Option
-//     * Coproduct
+// * Když nevíš, tak Option
+// * Coproduct
 
 
 namespace FunctionalCsharp;
