@@ -10,17 +10,22 @@ public class OptionForeverTests
     [Test]
     public void Conditional_resolves_value()
     {
-        // use case configuration - Not needed, we should be able to recover to default values
-        // Not found user? - Depends
-        var result = Option<int>.Some(7);
+        // use case load service configuration - Not needed, we should be able to recover to default values
+        // Not found user?
+        // A) Throw not found exception
+        // B) Return default/Dummy user
+        // C) Return Option<User>
 
-        Assert.That(result.IsSome, Is.True);
+        var users = new Users(new StaticUsersRepository());
+        var user = users.FindUserById(0);
+
+        Assert.That(user.IsNone, Is.True);
     }
 }
 
 public class Users(IRepository repository)
 {
-    public Option<User> FindUserById(Guid userId)
+    public Option<User> FindUserById(int userId)
     {
         return repository.LoadUser(userId);
     }
@@ -34,8 +39,9 @@ public class StaticUsersRepository : IRepository
         new User(2, "Mary"),
     };
 
-    public Option<User> LoadUser(Guid userId)
+    public Option<User> LoadUser(int userId)
     {
-        return users.FirstOrDefault();
+        // implicit cast to Option
+        return users.FirstOrDefault(u => u.Id == userId);
     }
 }

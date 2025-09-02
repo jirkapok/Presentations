@@ -13,14 +13,13 @@ public class ParametersOverloads
     {
         var repository = new Mock<IRepository>();
         var logger = new Mock<ILogger>();
-        var userId = Guid.NewGuid();
 
         // How to reduce number of parameters?
         var result = Api.ReportUser(
             repository: repository.Object,
             logger: logger.Object,
             formatUser: _ => "No items 0",
-            userId: userId);
+            userId: 3);
 
         Assert.That(result, Is.EqualTo("No items 0"));
     }
@@ -29,7 +28,7 @@ public class ParametersOverloads
 
 public class Api
 {
-    public static string ReportUser(IRepository repository, ILogger logger, Func<Option<User>, string> formatUser, Guid userId) // ... and more
+    public static string ReportUser(IRepository repository, ILogger logger, Func<Option<User>, string> formatUser, int userId) // ... and more
     {
         var user = repository.LoadUser(userId);
         logger.Warn("Users loaded");
