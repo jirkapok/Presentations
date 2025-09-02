@@ -2,9 +2,7 @@ using LanguageExt;
 using NUnit.Framework;
 
 // Příklady:
-// * Když nevíš, tak Option
 // * Coproduct
-
 
 namespace FunctionalCsharp;
 

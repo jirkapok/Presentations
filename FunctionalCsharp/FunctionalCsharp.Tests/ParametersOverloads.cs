@@ -1,3 +1,5 @@
+using FunctionalCsharp.UsersRepository;
+using LanguageExt;
 using Moq;
 using NUnit.Framework;
 
@@ -27,7 +29,7 @@ public class ParametersOverloads
 
 public class Api
 {
-    public static string ReportUser(IRepository repository, ILogger logger, Func<object, string> formatUser, Guid userId) // ... and more
+    public static string ReportUser(IRepository repository, ILogger logger, Func<Option<User>, string> formatUser, Guid userId) // ... and more
     {
         var user = repository.LoadUser(userId);
         logger.Warn("Users loaded");
@@ -38,9 +40,4 @@ public class Api
 public interface ILogger
 {
     void Warn(string message);
-}
-
-public interface IRepository
-{
-    object LoadUser(Guid userId);
 }
