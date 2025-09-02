@@ -21,6 +21,7 @@ public class HiddenIfTests
         Assert.That(result, Is.EqualTo("Items 7"));
     }
 
+    // How many tests do i need for this method?
     private static string FormatItemsCount(int count)
     {
         return Either<string, int>.Right(count)

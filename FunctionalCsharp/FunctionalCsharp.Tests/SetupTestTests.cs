@@ -17,6 +17,7 @@ public class SetupTestTests : ApiTests
 
 public class ApiTests
 {
+    // Imagine the type gymnastics with more parameters for the arrange, act and assert methods...
     protected void CallApiTest<TParam, TResult>(Func<TParam> arrange, Func<TParam, TResult> act, Action<TResult> assert)
     {
         var toProcess = arrange();
