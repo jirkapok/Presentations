@@ -2,7 +2,6 @@ using LanguageExt;
 using NUnit.Framework;
 
 // Příklady:
-// * čím víc parametrů, tím víc Adidas
 // * Když nevíš, tak Option
 // * Coproduct
 
