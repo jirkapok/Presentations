@@ -9,25 +9,26 @@ namespace FunctionalCsharp;
 [TestFixture]
 public class HiddenIfTests
 {
-    private const int valueToCheck = 7;
-
     [Test]
     public void Conditional_resolves_value()
     {
-        var result = FormatItemsCount(valueToCheck);
+        var items = Either<string, int>.Right(7);
+        var result = FormatItemsCount(items);
 
         Assert.That(result, Is.EqualTo("Items 7"));
     }
 
     // How many tests do i need for this method?
-    private static string FormatItemsCount(int count)
+    private static string FormatItemsCount(Either<string, int> count)
     {
-        return Either<string, int>.Right(count)
+        var offset = 2;
+
+        return count
             .Match(
                 Right: Option<int>.Some,
-                Left: _ => Option<int>.None)
+                Left: s => int.Parse(s))
             .Match(
-                Some: v => $"Items {v}",
+                Some: v => $"Items {v + offset}", // allocation
                 None: () => "No items");
     }
 }
