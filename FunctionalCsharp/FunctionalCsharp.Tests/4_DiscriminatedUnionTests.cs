@@ -35,6 +35,7 @@ public class DiscriminatedUnionTests
 
     private double Area_OneOf(Shape2 a)
     {
+        // What happens if we add hexagon to the Shape2?
         return a.Match(
             c => pi * c.Radius * c.Radius,
             r => r.Width * r.Height,
