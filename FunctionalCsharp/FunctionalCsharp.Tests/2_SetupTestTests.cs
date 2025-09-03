@@ -8,6 +8,7 @@ public class SetupTestTests : ApiTests
     [Test]
     public void CallApi_Returns_Items()
     {
+        // Do i really know what is the execution order?
         CallApiTest(
             arrange: () => 7,
             act: a => a,

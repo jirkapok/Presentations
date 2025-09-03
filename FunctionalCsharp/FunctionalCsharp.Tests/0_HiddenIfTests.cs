@@ -1,9 +1,6 @@
 using LanguageExt;
 using NUnit.Framework;
 
-// Příklady:
-// * Coproduct
-
 namespace FunctionalCsharp;
 
 [TestFixture]
@@ -12,7 +9,9 @@ public class HiddenIfTests
     [Test]
     public void Conditional_resolves_value()
     {
-        var result = FormatItemsCount(Option<int>.Some(7)); // implicit conversion to Either<string, Option<int>>
+        // implicit conversion to Either<string, Option<int>>
+        var result = FormatItemsCount(Option<int>.Some(7));
+        // var result = FormatItemsCount(Option<int>.None);
 
         Assert.That(result, Is.EqualTo("Items 9"));
     }

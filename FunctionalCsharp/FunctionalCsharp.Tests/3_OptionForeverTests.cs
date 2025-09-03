@@ -11,9 +11,9 @@ public class OptionForeverTests
     public void Conditional_resolves_value()
     {
         // use case load service configuration - Not needed, we should be able to recover to default values
-        // Not found user?
+        // Not found user, what is your solution?
         // A) Throw not found exception
-        // B) Return default/Dummy user
+        // B) Return default/Dummy/Unknown user
         // C) Return Option<User>
 
         var users = new Users(new StaticUsersRepository());

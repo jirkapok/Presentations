@@ -18,10 +18,10 @@ public class ParametersOverloads
         var result = Api.ReportUser(
             repository: repository.Object,
             logger: logger.Object,
-            formatUser: _ => "No items 0",
+            formatUser: _ => "User Formatted",
             userId: 3);
 
-        Assert.That(result, Is.EqualTo("No items 0"));
+        Assert.That(result, Is.EqualTo("User Formatted"));
     }
 }
 
@@ -31,7 +31,7 @@ public class Api
     public static string ReportUser(IRepository repository, ILogger logger, Func<Option<User>, string> formatUser, int userId) // ... and more
     {
         var user = repository.LoadUser(userId);
-        logger.Warn("Users loaded");
+        logger.Warn("Users loaded"); // side effect
         return formatUser(user);
     }
 }
