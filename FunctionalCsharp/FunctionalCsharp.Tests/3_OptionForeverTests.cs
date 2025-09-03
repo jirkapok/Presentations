@@ -18,6 +18,8 @@ public class OptionForeverTests
 
         var users = new Users(new StaticUsersRepository());
         var user = users.FindUserById(0);
+        // var name = user.Map(u => u.Name.ToUpper())
+        //     .IfNone(() => "UNKNOWN");
 
         Assert.That(user.IsNone, Is.True);
     }
